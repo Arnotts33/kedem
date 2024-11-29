@@ -52,7 +52,7 @@
 	--icon-yellow: hsl(45, 100%, 44%);
 	--icon-green: hsla(88, 23%, 26%, 0.6);
 	--icon-orange: hsl(30, 98%, 21%);
-	--icon-gray: hsl(80, 4%, 16%);
+	--icon-gray: hsla(80, 4%, 16%, 0.8);
 }
 
 /* ===== RESET CSS ===== */
