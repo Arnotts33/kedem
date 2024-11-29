@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
 function Navbar() {
@@ -5,26 +6,26 @@ function Navbar() {
 		<header className={styles.header}>
 			<nav>
 				<div>
-					<a href="/">
+					<Link to="/">
 						<img
 							src="/images/logo-kedem.svg"
 							alt="logo"
 							width={50}
 						/>
-					</a>
+					</Link>
 				</div>
 				<ul>
 					<li>
-						<a href="/">Home</a>
+						<Link to="/">Home</Link>
 					</li>
 					<li>
-						<a href="/bookings">Bookings</a>
+						<Link to="/bookings">Bookings</Link>
 					</li>
 					<li>
-						<a href="/traiteur">Traiteur</a>
+						<Link to="/traiteur">Traiteur</Link>
 					</li>
 					<li>
-						<a href="/contact">Contact</a>
+						<Link to="/contact">Contact</Link>
 					</li>
 				</ul>
 			</nav>
