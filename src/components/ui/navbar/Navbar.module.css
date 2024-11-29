@@ -1,0 +1,27 @@
+.header {
+	height: 150px;
+	padding-inline: 10px;
+	display: flex;
+	justify-content: center;
+	border-bottom: 1px solid black;
+}
+
+.navbar {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	width: 80px;
+}
+
+.navMenu {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	font-family: var(--ff-satoshi);
+	color: var(--heading-primary);
+	font-weight: var(--fw-medium);
+}

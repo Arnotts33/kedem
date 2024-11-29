@@ -4,17 +4,13 @@ import styles from "./Navbar.module.css";
 function Navbar() {
 	return (
 		<header className={styles.header}>
-			<nav>
-				<div>
+			<nav className={styles.navbar}>
+				<div className={styles.logo}>
 					<Link to="/">
-						<img
-							src="/images/logo-kedem.svg"
-							alt="logo"
-							width={50}
-						/>
+						<img src="/images/logo-kedem.svg" alt="logo" />
 					</Link>
 				</div>
-				<ul>
+				<ul className={styles.navMenu}>
 					<li>
 						<Link to="/">Home</Link>
 					</li>

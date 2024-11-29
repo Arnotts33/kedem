@@ -14,6 +14,13 @@
 
 @font-face {
 	font-family: "Satoshi";
+	src: url("/src/assets/fonts/Satoshi/Satoshi-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Satoshi";
 	src: url("/src/assets/fonts/Satoshi/Satoshi-Bold.woff2") format("woff2");
 	font-weight: 700;
 	font-style: normal;
@@ -26,6 +33,7 @@
 	--ff-halimun: "Halimun", sans-serif;
 	--ff-satoshi: "Satoshi", sans-serif;
 	--fw-regular: 400;
+	--fw-medium: 500;
 	--fw-bold: 700;
 
 	/* Colors */
