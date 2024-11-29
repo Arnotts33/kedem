@@ -43,7 +43,8 @@
 	--text-secondary: hsl(45, 80%, 94%);
 
 	--bg-primary: hsl(45, 80%, 94%);
-	--bg-secondary: hsla(156, 14%, 52%, 0.85);
+	--bg-secondary: hsl(156, 14%, 52%);
+	--bg-secondary-transparent: hsla(156, 14%, 52%, 0.85);
 
 	--btn-accent: hsl(30, 99%, 39%);
 	--btn-accent-hover: hsl(27, 99%, 32%);
