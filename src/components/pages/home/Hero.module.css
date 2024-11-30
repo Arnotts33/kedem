@@ -1,8 +1,8 @@
 .container {
 	min-height: calc(100vh - 150px);
 	width: 100%;
-	display: flex;
-	justify-content: center;
+	/* display: flex;
+	justify-content: center; */
 	position: relative;
 }
 

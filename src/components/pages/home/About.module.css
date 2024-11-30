@@ -1,0 +1,36 @@
+.container {
+	width: 85%;
+	max-width: 75rem;
+	display: flex;
+	align-items: center;
+	gap: 6rem;
+}
+
+.title {
+	flex: 45%;
+	font-family: var(--ff-satoshi);
+	font-weight: var(--fw-regular);
+	color: var(--heading-primary);
+	font-size: clamp(1.5rem, 5vw, 3.5rem);
+	line-height: 1.5;
+}
+
+.text {
+	flex: 55%;
+	font-size: clamp(1rem, 2.5vw, 1.5rem);
+	line-height: 1.5;
+	color: var(--text-primary);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+	.container {
+		flex-direction: column;
+		gap: 1rem;
+	}
+	.title,
+	.text {
+		text-align: center;
+	}
+}

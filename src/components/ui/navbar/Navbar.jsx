@@ -23,7 +23,7 @@ function Navbar() {
 					}
 				>
 					<li>
-						<Link to="/">Home</Link>
+						<a href="#">Menus</a>
 					</li>
 					<li>
 						<Link to="/bookings">Réservations</Link>
