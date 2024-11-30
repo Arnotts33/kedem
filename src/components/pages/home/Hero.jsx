@@ -1,7 +1,7 @@
 import styles from "./Hero.module.css";
 import illustration from "../../../assets/images/illustration-marche.webp";
 import plante from "../../../assets/images/kedem-plantes-pois.svg";
-import cafe from "../../../assets/images/kedem-cafe.svg";
+// import cafe from "../../../assets/images/kedem-cafe.svg";
 
 function Hero() {
 	return (
@@ -22,7 +22,7 @@ function Hero() {
 				</div>
 			</div>
 
-			<img className={styles.cafeImg} src={cafe} alt="Cafe Turc" />
+			{/* <img className={styles.cafeImg} src={cafe} alt="Cafe Turc" /> */}
 		</div>
 	);
 }

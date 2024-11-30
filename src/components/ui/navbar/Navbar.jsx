@@ -26,7 +26,7 @@ function Navbar() {
 						<Link to="/">Home</Link>
 					</li>
 					<li>
-						<Link to="/bookings">Bookings</Link>
+						<Link to="/bookings">Réservations</Link>
 					</li>
 					<li>
 						<Link to="/traiteur">Traiteur</Link>
