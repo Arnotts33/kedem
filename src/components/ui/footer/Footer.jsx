@@ -1,5 +1,7 @@
 import styles from "./Footer.module.css";
 import affiche from "../../../assets/images/affiche.webp";
+import instaIcon from "../../../assets/icons/instagram.svg";
+import fbIcon from "../../../assets/icons/facebook.svg";
 
 function Footer() {
 	return (
@@ -60,7 +62,20 @@ function Footer() {
 								</p>
 							</div>
 							<div className={styles.socials}>
-								<p>Icons</p>
+								<a href="#">
+									<img
+										src={instaIcon}
+										alt="Instagram icon"
+										className={styles.socialIcon}
+									/>
+								</a>
+								<a href="#">
+									<img
+										src={fbIcon}
+										alt="Facebook icon"
+										className={styles.socialIcon}
+									/>
+								</a>
 							</div>
 						</div>
 					</div>

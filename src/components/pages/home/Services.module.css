@@ -1,16 +1,16 @@
 .servicesSection {
 	min-height: 100svh;
-	width: 85%;
-	max-width: 75rem;
+	width: 90%;
+	/* max-width: 84.75rem; */
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
 }
 
 .servicesContainer {
 	/* min-height: 90svh; */
 	width: 100%;
-	max-width: 75rem;
+	max-width: 85rem;
 	padding-block: 8rem;
 	background-color: var(--bg-secondary-transparent);
 	border-radius: 1rem;

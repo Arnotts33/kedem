@@ -7,8 +7,9 @@
 .gallery {
 	display: flex;
 	justify-content: center;
-	flex-wrap: no-wrap;
 	overflow: hidden;
+	flex-wrap: no-wrap;
+
 	gap: 1rem;
 }
 

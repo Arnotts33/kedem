@@ -3,8 +3,9 @@ import bbqImg from "../../../assets/images/bbq.webp";
 import confitImg from "../../../assets/images/confit.webp";
 import marcheImg from "../../../assets/images/marche.webp";
 import dessertImg from "../../../assets/images/dessert.webp";
+import thonImg from "../../../assets/images/thon.webp";
 
-const images = [bbqImg, confitImg, marcheImg, dessertImg];
+const images = [bbqImg, confitImg, marcheImg, dessertImg, thonImg];
 
 function Gallery() {
 	return (
