@@ -1,6 +1,88 @@
-.container {
-	min-height: 100vh;
+.traiteurSection {
+	min-height: 100svh;
+	width: 85%;
+	max-width: 75rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.traiteurContainer {
+	/* min-height: 90svh; */
+	width: 100%;
+	max-width: 75rem;
+	padding-block: 8rem;
+	background-color: var(--bg-secondary-transparent);
+	border-radius: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.chefsImg {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-inline: 2rem;
+	position: relative;
+}
+
+.chefsImg .lemons {
+	position: absolute;
+	width: clamp(80px, 20%, 300px);
+	left: 60px;
+	z-index: 0;
+}
+
+.chefsImg .chefs {
+	width: 100%;
+	max-width: 480px;
+	aspect-ratio: 480 / 616;
+	object-fit: cover;
+	border-top-left-radius: 48%;
+	border-top-right-radius: 48%;
+	z-index: 1;
+}
+
+.traiteurContent {
+	flex: 1;
+	padding-left: 4rem;
+	font-family: var(--ff-satoshi);
+	color: var(--text-secondary);
+}
+
+.traiteurTitle {
+	font-size: clamp(2rem, 4.25vw, 3.5rem);
+}
+
+.traiteurText {
+	font-size: clamp(1rem, 2vw, 1.5rem);
+	margin-top: 2rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+	.traiteurContainer {
+		flex-direction: column-reverse;
+		padding-block: 2rem;
+	}
+	.chefsImg {
+		padding-top: 2rem;
+	}
+
+	.chefsImg .lemons {
+		left: 110px;
+	}
+
+	.traiteurContent {
+		padding: 2rem;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.chefsImg .lemons {
+		left: 50px;
+	}
 }

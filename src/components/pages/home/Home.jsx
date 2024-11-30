@@ -1,3 +1,4 @@
+import Traiteur from "../traiteur/Traiteur";
 import About from "./About";
 import Chefs from "./Chefs";
 import Hero from "./Hero";
@@ -11,6 +12,7 @@ function Home() {
 			<About />
 			<Chefs />
 			<Menus />
+			<Traiteur />
 		</div>
 	);
 }
