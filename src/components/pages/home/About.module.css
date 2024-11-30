@@ -1,9 +1,10 @@
-.container {
+.aboutSection {
 	width: 85%;
 	max-width: 75rem;
 	display: flex;
 	align-items: center;
 	gap: 6rem;
+	margin-bottom: 5rem;
 }
 
 .title {
@@ -25,7 +26,7 @@
 /* Media Queries */
 
 @media screen and (max-width: 1024px) {
-	.container {
+	.aboutSection {
 		flex-direction: column;
 		gap: 1rem;
 	}

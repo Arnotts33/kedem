@@ -1,4 +1,5 @@
 import About from "./About";
+import Chefs from "./Chefs";
 import Hero from "./Hero";
 import styles from "./Home.module.css";
 
@@ -7,6 +8,7 @@ function Home() {
 		<div className={styles.container}>
 			<Hero />
 			<About />
+			<Chefs />
 		</div>
 	);
 }

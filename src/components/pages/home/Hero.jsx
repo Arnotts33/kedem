@@ -5,7 +5,7 @@ import plante from "../../../assets/images/kedem-plantes-pois.svg";
 
 function Hero() {
 	return (
-		<div className={styles.container}>
+		<section className={styles.container}>
 			<img
 				className={styles.peaImg}
 				src={plante}
@@ -23,7 +23,7 @@ function Hero() {
 			</div>
 
 			{/* <img className={styles.cafeImg} src={cafe} alt="Cafe Turc" /> */}
-		</div>
+		</section>
 	);
 }
 

@@ -2,7 +2,7 @@ import styles from "./About.module.css";
 
 function About() {
 	return (
-		<section className={styles.container}>
+		<section className={styles.aboutSection}>
 			<h1 className={styles.title}>
 				Goûts et saveurs des pays du Levant
 			</h1>
