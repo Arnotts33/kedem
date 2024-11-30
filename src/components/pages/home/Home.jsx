@@ -1,3 +1,4 @@
+import Gallery from "../../ui/gallery/Gallery";
 import About from "./About";
 import Chefs from "./Chefs";
 import Hero from "./Hero";
@@ -13,6 +14,7 @@ function Home() {
 			<Chefs />
 			<Menus />
 			<Services />
+			<Gallery />
 		</div>
 	);
 }
