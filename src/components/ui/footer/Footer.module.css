@@ -93,6 +93,10 @@
 		border-top-right-radius: 48%;
 	}
 
+	.footerTextContainer {
+		align-self: flex-start;
+	}
+
 	.footerTitle {
 		font-size: 2rem;
 	}
