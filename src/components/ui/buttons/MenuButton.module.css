@@ -1,0 +1,22 @@
+.menuBox {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.menuBox img {
+	width: 50%;
+	aspect-ratio: 442 / 574;
+	object-fit: cover;
+	border-top-left-radius: 48%;
+	border-top-right-radius: 48%;
+	cursor: pointer;
+}
+
+.caption {
+	text-transform: uppercase;
+	letter-spacing: 0.25rem;
+}

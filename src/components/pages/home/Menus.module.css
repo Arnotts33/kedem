@@ -1,0 +1,41 @@
+.menuSection {
+	min-height: 100svh;
+	width: 85%;
+	max-width: 75rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	padding-top: 3rem;
+	margin-bottom: 8rem;
+}
+
+.title h2 {
+	font-family: var(--ff-halimun);
+	color: var(--heading-primary);
+	font-size: clamp(2rem, 6vw, 3rem);
+	font-weight: var(--fw-regular);
+}
+
+.menuBoxes {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+	.menuBoxes {
+		flex-direction: column;
+		gap: 2rem;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.title {
+		padding: 0;
+	}
+}
