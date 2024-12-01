@@ -22,10 +22,10 @@ function Chefs() {
 						divers, mais aux idées communes.
 						<br />
 						<br />
-						Passionnés par les saveurs, les goûts et l’hospitalité
-						des pays du Levant, notre cuisine s’est construite au
-						long de six années de travail communes, de recherches et
-						de réflexions.
+						Passionnés par les saveurs, les goûts et
+						l&apos;hospitalité des pays du Levant, notre cuisine
+						s&apos;est construite au long de six années de travail
+						communes, de recherches et de réflexions.
 						<br />
 						<br />
 						En cuisine, Gil et Ronan forment un duo complice et

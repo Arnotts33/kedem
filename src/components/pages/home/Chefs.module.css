@@ -1,6 +1,6 @@
 .chefsSection {
 	min-height: 100svh;
-	width: 90%;
+	width: 94%;
 	/* max-width: 84.75rem; */
 	display: flex;
 	justify-content: flex-start;
@@ -12,6 +12,7 @@
 	width: 100%;
 	max-width: 85rem;
 	padding-block: 8rem;
+	padding-inline: 2rem;
 	background-color: var(--bg-secondary-transparent);
 	border-radius: 1rem;
 	display: flex;
@@ -47,17 +48,17 @@
 
 .chefsContent {
 	flex: 1;
-	padding-right: 4rem;
+	padding-inline: 2rem;
 	font-family: var(--ff-satoshi);
 	color: var(--text-secondary);
 }
 
 .chefsTitle {
-	font-size: clamp(2rem, 4.25vw, 3.5rem);
+	font-size: clamp(2rem, 4vw, 3.5rem);
 }
 
 .chefsText {
-	font-size: clamp(1rem, 2vw, 1.5rem);
+	font-size: clamp(1rem, 1.75vw, 1.5rem);
 	margin-top: 2rem;
 }
 
@@ -71,12 +72,16 @@
 		padding-top: 2rem;
 	}
 
+	.chefsTitle {
+		font-size: clamp(1.25rem, 6vw, 3.25rem);
+	}
+
 	.chefsImg .lemons {
 		left: 110px;
 	}
 
 	.chefsContent {
-		padding: 2rem;
+		padding: 2rem 0;
 		text-align: center;
 	}
 }

@@ -1,6 +1,6 @@
 .servicesSection {
 	min-height: 100svh;
-	width: 90%;
+	width: 94%;
 	/* max-width: 84.75rem; */
 	display: flex;
 	justify-content: flex-end;
@@ -12,6 +12,7 @@
 	width: 100%;
 	max-width: 85rem;
 	padding-block: 8rem;
+	padding-inline: 2rem;
 	background-color: var(--bg-secondary-transparent);
 	border-radius: 1rem;
 	display: flex;
@@ -47,7 +48,7 @@
 
 .servicesContent {
 	flex: 1;
-	padding-left: 4rem;
+	padding-inline: 2rem;
 	font-family: var(--ff-satoshi);
 	color: var(--text-secondary);
 }
@@ -57,7 +58,7 @@
 }
 
 .servicesText {
-	font-size: clamp(1rem, 2vw, 1.5rem);
+	font-size: clamp(1rem, 1.75vw, 1.5rem);
 	margin-block: 2rem 4rem;
 }
 
@@ -67,6 +68,11 @@
 		flex-direction: column-reverse;
 		padding-block: 2rem;
 	}
+
+	.servicesTitle {
+		font-size: clamp(1.25rem, 6vw, 3.25rem);
+	}
+
 	.chefsImg {
 		padding-top: 2rem;
 	}
@@ -76,7 +82,7 @@
 	}
 
 	.servicesContent {
-		padding: 2rem;
+		padding: 2rem 0;
 		text-align: center;
 	}
 }
