@@ -73,6 +73,13 @@
 		font-size: clamp(1.25rem, 6vw, 3.25rem);
 	}
 
+	.servicesText {
+		font-size: clamp(1rem, 2vw, 1.5rem);
+		margin-top: 1rem;
+		width: 85%;
+		margin-inline: auto;
+	}
+
 	.chefsImg {
 		padding-top: 2rem;
 	}

@@ -54,7 +54,7 @@
 }
 
 .chefsTitle {
-	font-size: clamp(2rem, 4vw, 3.5rem);
+	font-size: clamp(2rem, 3.75vw, 3.5rem);
 }
 
 .chefsText {
@@ -68,12 +68,20 @@
 		flex-direction: column;
 		padding-block: 2rem;
 	}
+
 	.chefsImg {
 		padding-top: 2rem;
 	}
 
 	.chefsTitle {
 		font-size: clamp(1.25rem, 6vw, 3.25rem);
+	}
+
+	.chefsText {
+		font-size: clamp(1rem, 2vw, 1.5rem);
+		margin-top: 1rem;
+		width: 85%;
+		margin-inline: auto;
 	}
 
 	.chefsImg .lemons {
