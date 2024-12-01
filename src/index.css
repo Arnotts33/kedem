@@ -98,10 +98,7 @@ a {
 	cursor: pointer;
 }
 
-button,
-input,
-textarea,
-select {
+button {
 	font: inherit;
 	color: inherit;
 	border: none;
@@ -136,15 +133,6 @@ h6 {
 
 p {
 	line-height: inherit;
-}
-
-:focus {
-	outline: 2px dashed #000;
-	outline-offset: 2px;
-}
-
-:focus:not(:focus-visible) {
-	outline: none;
 }
 
 /* ===== FIN DU RESET ===== */

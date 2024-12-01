@@ -1,5 +1,5 @@
 const navigation = [
-	{ name: "Bookings", link: "/bookings" },
+	{ name: "Réservations", link: "/bookings" },
 	{ name: "Traiteur", link: "/traiteur" },
 	{ name: "Contact", link: "/contact" },
 ];

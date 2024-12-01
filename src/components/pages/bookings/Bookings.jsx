@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import styles from "./Bookings.module.css";
+import Button from "../../ui/buttons/Button";
 
 function Bookings() {
 	useEffect(() => {
@@ -19,6 +20,100 @@ function Bookings() {
 					remercions de votre compréhension et avons hâte de vous
 					accueillir.
 				</p>
+			</section>
+			<section className={styles.formSection}>
+				<form>
+					<div className={styles.grid}>
+						<div className={styles.field}>
+							<label htmlFor="lastName">Nom</label>
+							<input
+								type="text"
+								id="lastName"
+								name="lastName"
+								placeholder="Votre nom..."
+								required
+							/>
+						</div>
+						<div className={styles.field}>
+							<label htmlFor="firstName">Prénom</label>
+							<input
+								type="text"
+								id="firstName"
+								name="firstName"
+								placeholder="Votre prénom..."
+								required
+							/>
+						</div>
+						<div className={styles.field}>
+							<label htmlFor="email">Email</label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder="Votre email..."
+								required
+							/>
+						</div>
+						<div className={styles.field}>
+							<label htmlFor="phone">Téléphone</label>
+							<input
+								type="tel"
+								id="phone"
+								name="phone"
+								required
+							/>
+						</div>
+						<div className={styles.field}>
+							<label htmlFor="date">Date</label>
+							<input type="date" id="date" name="date" required />
+						</div>
+						<div className={styles.field}>
+							<label htmlFor="time">Heure</label>
+							<input
+								type="time"
+								id="time"
+								name="time"
+								list="bookingTimes"
+								required
+							/>
+							<datalist id="bookingTimes">
+								<option value="12:00" />
+								<option value="12:30" />
+								<option value="13:00" />
+								<option value="13:30" />
+								<option value="19:00" />
+								<option value="19:30" />
+								<option value="20:00" />
+								<option value="20:30" />
+							</datalist>
+						</div>
+					</div>
+					<div className={styles.field}>
+						<label htmlFor="guests">Nombre de personnes</label>
+						<input
+							type="number"
+							id="guests"
+							name="guests"
+							min="1"
+							max="8"
+							required
+						/>
+					</div>
+					<div className={styles.field}>
+						<label htmlFor="message">Message</label>
+						<textarea
+							id="message"
+							name="message"
+							cols={30}
+							rows={10}
+							placeholder="Votre message..."
+							required
+						></textarea>
+					</div>
+					<div className={styles.submitBtn}>
+						<Button type="submit">Envoyer</Button>
+					</div>
+				</form>
 			</section>
 		</div>
 	);
