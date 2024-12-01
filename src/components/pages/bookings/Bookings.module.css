@@ -2,5 +2,27 @@
 	min-height: 100vh;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+}
+
+.titleSection {
+	margin-block: 4rem;
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	max-width: 50rem;
+	text-align: center;
+	gap: 2rem;
+}
+
+.title {
+	font-size: clamp(2rem, 5vw, 4rem);
+	font-weight: 700;
+	color: var(--heading-primary);
+}
+
+.subtitle {
+	font-size: clamp(1rem, 1.5vw, 1.25rem);
+	font-weight: 400;
+	color: var(--text-primary);
+	line-height: 1.8;
 }
