@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import styles from "./Contact.module.css";
 import Button from "../../ui/buttons/Button";
+import Map from "../../ui/map/Map";
 
 function Contact() {
 	useEffect(() => {
@@ -78,6 +79,10 @@ function Contact() {
 						<Button type="submit">Envoyer</Button>
 					</div>
 				</form>
+			</section>
+
+			<section className={styles.mapSection}>
+				<Map />
 			</section>
 		</div>
 	);

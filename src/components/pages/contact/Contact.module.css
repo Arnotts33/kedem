@@ -3,6 +3,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	gap: 8rem;
 }
 
 .titleSection {
@@ -80,6 +81,11 @@
 
 .submitBtn {
 	margin: auto;
+}
+
+.mapSection {
+	width: 70%;
+	margin-bottom: 8rem;
 }
 
 /* Media Queries */
