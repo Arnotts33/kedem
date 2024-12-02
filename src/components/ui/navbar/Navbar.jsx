@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { useState } from "react";
 import styles from "./Navbar.module.css";
 import navigation from "./index";
@@ -28,6 +29,11 @@ function Navbar() {
 							: styles.navMenuList
 					}
 				>
+					<li>
+						<HashLink smooth to="/#menus" onClick={closeMobileMenu}>
+							Menus
+						</HashLink>
+					</li>
 					{navigation.map((item) => (
 						<li key={item.name}>
 							<NavLink to={item.link} onClick={closeMobileMenu}>

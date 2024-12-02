@@ -19,7 +19,7 @@ function Menus() {
 	}
 
 	return (
-		<section className={styles.menuSection}>
+		<section className={styles.menuSection} id="menus">
 			<div className={styles.title}>
 				<h2>Nos Menus</h2>
 			</div>
