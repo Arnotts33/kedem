@@ -1,7 +1,8 @@
 .container {
 	min-height: 100vh;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .titleSection {
@@ -25,4 +26,78 @@
 	font-weight: 400;
 	color: var(--text-primary);
 	line-height: 1.8;
+}
+
+.formSection {
+	width: 70%;
+	max-width: 50rem;
+}
+
+.formSection form {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 3rem;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+}
+
+.field {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.formSection label {
+	font-family: var(--ff-satoshi);
+	font-size: 1rem;
+	color: var(--text-primary);
+}
+
+.formSection input,
+.formSection textarea {
+	font-family: var(--ff-satoshi);
+	font-size: 1rem;
+	color: var(--text-primary);
+	padding: 0.5rem;
+	border: none;
+	border-radius: 0.25rem;
+}
+
+.formSection input::placeholder,
+.formSection textarea::placeholder {
+	opacity: 0.5;
+}
+
+.formSection input:focus,
+.formSection textarea:focus {
+	outline: 1px solid var(--input-outline);
+}
+
+.submitBtn {
+	margin: auto;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+	.titleSection {
+		width: 90%;
+	}
+
+	.formSection {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.formSection form {
+		margin-bottom: 6rem;
+	}
+	.grid {
+		grid-template-columns: 1fr;
+	}
 }
