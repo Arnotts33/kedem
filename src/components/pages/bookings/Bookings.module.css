@@ -70,13 +70,15 @@
 }
 
 .formSection input::placeholder,
-.formSection textarea::placeholder {
+.formSection textarea::placeholder,
+.formSection select::placeholder {
 	opacity: 0.5;
 }
 
 .formSection input:focus,
-.formSection textarea:focus {
-	outline: 1px solid var(--bg-secondary);
+.formSection textarea:focus,
+.formSection select:focus {
+	outline: 1px solid var(--input-outline);
 }
 
 .submitBtn {

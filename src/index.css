@@ -50,6 +50,8 @@
 	--btn-accent-hover: hsl(27, 99%, 32%);
 	--btn-text: hsl(45, 80%, 94%);
 
+	--input-outline: hsla(30, 98%, 21%, 0.5);
+
 	--icon-yellow: hsl(45, 100%, 44%);
 	--icon-green: hsla(88, 23%, 26%, 0.6);
 	--icon-orange: hsl(30, 98%, 21%);
@@ -136,3 +138,10 @@ p {
 }
 
 /* ===== FIN DU RESET ===== */
+
+/* FIREFOX */
+@-moz-document url-prefix() {
+	select {
+		background-color: white;
+	}
+}

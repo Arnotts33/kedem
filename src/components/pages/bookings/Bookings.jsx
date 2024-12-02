@@ -69,23 +69,19 @@ function Bookings() {
 						</div>
 						<div className={styles.field}>
 							<label htmlFor="time">Heure</label>
-							<input
-								type="time"
-								id="time"
-								name="time"
-								list="bookingTimes"
-								required
-							/>
-							<datalist id="bookingTimes">
-								<option value="12:00" />
-								<option value="12:30" />
-								<option value="13:00" />
-								<option value="13:30" />
-								<option value="19:00" />
-								<option value="19:30" />
-								<option value="20:00" />
-								<option value="20:30" />
-							</datalist>
+
+							<select name="bookingTime" id="time" required>
+								<option value="12:00">12:00</option>
+								<option value="12:30">12:30</option>
+								<option value="13:00">13:00</option>
+								<option value="13:30">13:30</option>
+								<option value="19:00">19:00</option>
+								<option value="19:30">19:30</option>
+								<option value="20:00">20:00</option>
+								<option value="20:30">20:30</option>
+								<option value="21:00">21:00</option>
+								<option value="21:30">21:30</option>
+							</select>
 						</div>
 					</div>
 					<div className={styles.field}>
