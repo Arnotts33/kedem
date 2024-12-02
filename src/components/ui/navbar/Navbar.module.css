@@ -3,6 +3,9 @@
 	display: flex;
 	justify-content: center;
 	/* border-bottom: 1px solid black; */
+	background: url("/src/assets/images/bg.svg");
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .navbar {
@@ -26,6 +29,8 @@
 	font-family: var(--ff-satoshi);
 	color: var(--heading-primary);
 	font-weight: var(--fw-medium);
+	font-size: 1.125rem;
+	padding-block: 0.75rem;
 }
 
 .navMenuList a::before {
@@ -34,7 +39,7 @@
 	display: block;
 	width: 100%;
 	height: 1px;
-	bottom: -3px;
+	bottom: 3px;
 	left: 0;
 	background-color: var(--heading-primary);
 	transform: scaleX(0);
@@ -61,6 +66,10 @@
 	width: calc(100% - 2rem);
 	z-index: 100;
 	animation: fadeIn 0.3s ease-in-out;
+}
+
+.navMobileMenuList li a {
+	width: 100%;
 }
 
 @keyframes fadeIn {

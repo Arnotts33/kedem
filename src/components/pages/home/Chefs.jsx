@@ -11,6 +11,7 @@ function Chefs() {
 						src={lemons}
 						alt="Citrons noirs"
 						className={styles.lemons}
+						loading="lazy"
 					/>
 					<img src={chefs} alt="Chefs" className={styles.chefs} />
 				</div>

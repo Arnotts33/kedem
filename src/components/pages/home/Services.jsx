@@ -31,7 +31,12 @@ function Services() {
 				alt="Citrons noirs"
 				className={styles.lemons}
 			/> */}
-					<img src={chefs} alt="Chefs" className={styles.chefs} />
+					<img
+						src={chefs}
+						alt="Chefs"
+						className={styles.chefs}
+						loading="lazy"
+					/>
 				</div>
 			</div>
 		</section>
