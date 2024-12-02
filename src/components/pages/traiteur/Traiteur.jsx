@@ -3,8 +3,12 @@ import Flatpickr from "react-flatpickr";
 import "flatpickr/dist/themes/material_orange.css";
 import Button from "../../ui/buttons/Button";
 import styles from "./Traiteur.module.css";
+import useWeb3Form from "../../../hooks/useWeb3Form";
 
 function Traiteur() {
+	const accessKey = "49c64825-8d1a-4fde-9b75-5da2b5872dbc";
+	const { result, isSubmitting, handleSubmit } = useWeb3Form(accessKey);
+
 	const [date, setDate] = useState();
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -26,9 +30,14 @@ function Traiteur() {
 			</section>
 
 			<section className={styles.formSection}>
-				<form>
+				<form onSubmit={handleSubmit}>
 					<div className={styles.grid}>
 						<div className={styles.field}>
+							<input
+								type="hidden"
+								name="Formulaire de traiteur"
+								value="Demande de traiteur"
+							/>
 							<label htmlFor="lastName">Nom</label>
 							<input
 								type="text"
@@ -72,6 +81,7 @@ function Traiteur() {
 							<Flatpickr
 								value={date}
 								onChange={() => setDate(date)}
+								name="date"
 								placeholder="Sélectionnez une date..."
 							/>
 						</div>
@@ -99,9 +109,13 @@ function Traiteur() {
 						></textarea>
 					</div>
 					<div className={styles.submitBtn}>
-						<Button type="submit">Envoyer</Button>
+						<Button type="submit" disabled={isSubmitting}>
+							Envoyer
+						</Button>
+						{isSubmitting && <p>Envoi en cours...</p>}
 					</div>
 				</form>
+				{result && <p className={styles.result}>{result}</p>}
 			</section>
 		</div>
 	);

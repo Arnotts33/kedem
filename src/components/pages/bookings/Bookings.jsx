@@ -5,8 +5,12 @@ import styles from "./Bookings.module.css";
 import Button from "../../ui/buttons/Button";
 import dateOptions from "../../../lib/flatPickrConfig";
 import useAvailableTimes from "../../../hooks/useAvailableTimes";
+import useWeb3Form from "../../../hooks/useWeb3Form";
 
 function Bookings() {
+	const accessKey = "49c64825-8d1a-4fde-9b75-5da2b5872dbc";
+	const { result, isSubmitting, handleSubmit } = useWeb3Form(accessKey);
+
 	const [date, setDate] = useState();
 	const { availableTimes, updateAvailableTimes } = useAvailableTimes();
 
@@ -35,9 +39,14 @@ function Bookings() {
 				</p>
 			</section>
 			<section className={styles.formSection}>
-				<form>
+				<form onSubmit={handleSubmit}>
 					<div className={styles.grid}>
 						<div className={styles.field}>
+							<input
+								type="hidden"
+								name="Formulaire de réservation"
+								value="Demande de réservation"
+							/>
 							<label htmlFor="lastName">Nom</label>
 							<input
 								type="text"
@@ -82,6 +91,7 @@ function Bookings() {
 								value={date}
 								onChange={handleDateChange}
 								options={dateOptions}
+								name="date"
 								placeholder="Sélectionnez une date..."
 							/>
 						</div>
@@ -119,9 +129,13 @@ function Bookings() {
 						></textarea>
 					</div>
 					<div className={styles.submitBtn}>
-						<Button type="submit">Envoyer</Button>
+						<Button type="submit" disabled={isSubmitting}>
+							Envoyer
+						</Button>
+						{isSubmitting && <p>Envoi en cours...</p>}
 					</div>
 				</form>
+				{result && <p className={styles.result}>{result}</p>}
 			</section>
 		</div>
 	);

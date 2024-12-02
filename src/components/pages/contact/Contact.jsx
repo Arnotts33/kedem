@@ -2,8 +2,12 @@ import { useEffect } from "react";
 import styles from "./Contact.module.css";
 import Button from "../../ui/buttons/Button";
 import Map from "../../ui/map/Map";
+import useWeb3Form from "../../../hooks/useWeb3Form";
 
 function Contact() {
+	const accessKey = "49c64825-8d1a-4fde-9b75-5da2b5872dbc";
+	const { result, isSubmitting, handleSubmit } = useWeb3Form(accessKey);
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -22,8 +26,13 @@ function Contact() {
 			</section>
 
 			<section className={styles.formSection}>
-				<form>
+				<form onSubmit={handleSubmit}>
 					<div className={styles.grid}>
+						<input
+							type="hidden"
+							name="Formulaire de contact"
+							value="Contact / Questions"
+						/>
 						<div className={styles.field}>
 							<label htmlFor="lastName">Nom</label>
 							<input
@@ -76,9 +85,13 @@ function Contact() {
 						></textarea>
 					</div>
 					<div className={styles.submitBtn}>
-						<Button type="submit">Envoyer</Button>
+						<Button type="submit" disabled={isSubmitting}>
+							Envoyer
+						</Button>
+						{isSubmitting && <p>Envoi en cours...</p>}
 					</div>
 				</form>
+				{result && <p className={styles.result}>{result}</p>}
 			</section>
 
 			<section className={styles.mapSection}>
