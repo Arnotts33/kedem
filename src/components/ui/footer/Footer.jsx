@@ -37,14 +37,12 @@ function Footer() {
 										05 57 80 04 30
 									</p>
 									<p>
-										<a href="mailto:restaurant.kedem@gmail.com">
+										<a
+											href="mailto:restaurant.kedem@gmail.com"
+											aria-label="Send a mail to the restaurant"
+										>
 											restaurant.kedem@gmail.com
 										</a>
-									</p>
-								</div>
-								<div className={styles.email}>
-									<p className={styles.contactText}>
-										<a href="mailto:restaurant.kedem@gmail.com" />
 									</p>
 								</div>
 							</div>
@@ -62,14 +60,20 @@ function Footer() {
 								</p>
 							</div>
 							<div className={styles.socials}>
-								<a href="#">
+								<a
+									href="#"
+									aria-label="Link to the restaurant Instagram page"
+								>
 									<img
 										src={instaIcon}
 										alt="Instagram icon"
 										className={styles.socialIcon}
 									/>
 								</a>
-								<a href="#">
+								<a
+									href="#"
+									aria-label="Link to the restaurant Facebook page"
+								>
 									<img
 										src={fbIcon}
 										alt="Facebook icon"
