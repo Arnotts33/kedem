@@ -5,8 +5,8 @@
 	align-items: center;
 }
 
-.titleSection {
-	margin-block: 4rem;
+.sectionTitle {
+	margin-block: 4rem 3rem;
 	display: flex;
 	flex-direction: column;
 	width: 70%;
@@ -87,7 +87,7 @@
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-	.titleSection {
+	.sectionTitle {
 		width: 90%;
 	}
 

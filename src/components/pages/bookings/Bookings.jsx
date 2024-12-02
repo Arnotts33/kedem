@@ -22,7 +22,7 @@ function Bookings() {
 
 	return (
 		<div className={styles.container}>
-			<section className={styles.titleSection}>
+			<section className={styles.sectionTitle}>
 				<h1 className={styles.title}>Réservations</h1>
 				<p className={styles.subtitle}>
 					Merci d&apos;utiliser notre formulaire pour effectuer votre

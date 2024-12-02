@@ -8,13 +8,22 @@
 .mapContainer {
 	margin-top: 3rem;
 	display: flex;
-	gap: 2rem;
+	flex-direction: column;
+	gap: 4rem;
 }
 
 /* .massa_interior_img {
 	width: 50%;
 	border-radius: 1rem;
 } */
+
+.mapTitle {
+	font-size: clamp(2rem, 4vw, 3rem);
+	font-weight: 700;
+	font-family: var(--ff-halimun);
+	color: var(--heading-primary);
+	text-align: center;
+}
 
 .map {
 	width: 100%;

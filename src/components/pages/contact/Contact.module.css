@@ -3,16 +3,15 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 8rem;
 }
 
-.titleSection {
-	margin-block: 4rem;
+.sectionTitle {
+	margin-block: 4rem 3rem;
 	display: flex;
 	flex-direction: column;
 	width: 70%;
 	max-width: 50rem;
-	text-align: center;
+
 	gap: 2rem;
 }
 
@@ -20,6 +19,7 @@
 	font-size: clamp(2rem, 5vw, 4rem);
 	font-weight: 700;
 	color: var(--heading-primary);
+	text-align: center;
 }
 
 .subtitle {
@@ -27,11 +27,13 @@
 	font-weight: 400;
 	color: var(--text-primary);
 	line-height: 1.8;
+	text-align: center;
 }
 
 .formSection {
 	width: 70%;
 	max-width: 50rem;
+	margin-bottom: 6rem;
 }
 
 .formSection form {
@@ -84,18 +86,20 @@
 }
 
 .mapSection {
-	width: 70%;
+	width: 90%;
+	max-width: 50rem;
 	margin-bottom: 8rem;
 }
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
-	.titleSection {
+	.sectionTitle {
 		width: 90%;
 	}
 
 	.formSection {
 		width: 90%;
+		margin-bottom: 3rem;
 	}
 }
 

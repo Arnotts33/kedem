@@ -10,7 +10,7 @@ function Contact() {
 
 	return (
 		<div className={styles.container}>
-			<section className={styles.titleSection}>
+			<section className={styles.sectionTitle}>
 				<h1 className={styles.title}>Contact</h1>
 				<p className={styles.subtitle}>
 					Vous avez une question ou besoin d&apos;informations

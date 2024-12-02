@@ -3,10 +3,8 @@ import styles from "./Map.module.css";
 function Map() {
 	return (
 		<>
-			<div className={styles.mapTitle}>
-				<h1>Find us</h1>
-			</div>
 			<div className={styles.mapContainer}>
+				<h2 className={styles.mapTitle}>Nous trouver</h2>
 				{/* <img
 					className={styles.massa_interior_img}
 					src="/images/Massa-interieur.webp"

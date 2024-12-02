@@ -12,7 +12,7 @@ function Traiteur() {
 
 	return (
 		<div className={styles.container}>
-			<section className={styles.titleSection}>
+			<section className={styles.sectionTitle}>
 				<h1 className={styles.title}>Traiteur</h1>
 				<p className={styles.subtitle}>
 					Merci de nous faire confiance pour vos événements ! Ce
