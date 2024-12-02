@@ -26,3 +26,10 @@
 	font-weight: var(--fw-medium);
 	color: var(--heading-primary);
 }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+	.menuDescription {
+		width: 100%;
+	}
+}
