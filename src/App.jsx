@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import Lenis from "lenis";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import Navbar from "./components/ui/navbar/Navbar";
 import Home from "./components/pages/home/Home";
