@@ -26,11 +26,27 @@
 	justify-content: space-around;
 }
 
+.menuBox {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
 	.menuBoxes {
 		flex-direction: column;
-		gap: 2rem;
+		gap: 6rem;
+
+		.menuBoxes {
+			width: 100%;
+			align-items: center;
+		}
+
+		.menuBox {
+			width: 100%;
+		}
 	}
 }
 

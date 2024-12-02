@@ -1,0 +1,28 @@
+.menuContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 2rem;
+}
+
+.menuTitle {
+	font-family: var(--ff-halimun);
+	font-weight: var(--fw-bold);
+	color: var(--heading-primary);
+}
+
+.menuDescription {
+	width: 80%;
+}
+
+.menu {
+	font-family: var(--ff-satoshi);
+	font-size: 1.25rem;
+}
+
+.menu h3 {
+	font-weight: var(--fw-medium);
+	color: var(--heading-primary);
+}
