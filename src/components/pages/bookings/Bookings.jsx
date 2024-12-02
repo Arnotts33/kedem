@@ -1,11 +1,24 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Flatpickr from "react-flatpickr";
+import "flatpickr/dist/themes/material_orange.css";
 import styles from "./Bookings.module.css";
 import Button from "../../ui/buttons/Button";
+import dateOptions from "../../../lib/flatPickrConfig";
+import useAvailableTimes from "../../../hooks/useAvailableTimes";
 
 function Bookings() {
+	const [date, setDate] = useState(new Date());
+	const { availableTimes, updateAvailableTimes } = useAvailableTimes();
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
+
+	const handleDateChange = (selectedDates) => {
+		const selectedDate = selectedDates[0];
+		setDate(selectedDate);
+		updateAvailableTimes(selectedDate);
+	};
 
 	return (
 		<div className={styles.container}>
@@ -65,22 +78,20 @@ function Bookings() {
 						</div>
 						<div className={styles.field}>
 							<label htmlFor="date">Date</label>
-							<input type="date" id="date" name="date" required />
+							<Flatpickr
+								value={date}
+								onChange={handleDateChange}
+								options={dateOptions}
+							/>
 						</div>
 						<div className={styles.field}>
 							<label htmlFor="time">Heure</label>
-
 							<select name="bookingTime" id="time" required>
-								<option value="12:00">12:00</option>
-								<option value="12:30">12:30</option>
-								<option value="13:00">13:00</option>
-								<option value="13:30">13:30</option>
-								<option value="19:00">19:00</option>
-								<option value="19:30">19:30</option>
-								<option value="20:00">20:00</option>
-								<option value="20:30">20:30</option>
-								<option value="21:00">21:00</option>
-								<option value="21:30">21:30</option>
+								{availableTimes.map((time) => (
+									<option key={time} value={time}>
+										{time}
+									</option>
+								))}
 							</select>
 						</div>
 					</div>
