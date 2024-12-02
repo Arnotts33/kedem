@@ -7,7 +7,7 @@ import dateOptions from "../../../lib/flatPickrConfig";
 import useAvailableTimes from "../../../hooks/useAvailableTimes";
 
 function Bookings() {
-	const [date, setDate] = useState(new Date());
+	const [date, setDate] = useState();
 	const { availableTimes, updateAvailableTimes } = useAvailableTimes();
 
 	useEffect(() => {
@@ -82,6 +82,7 @@ function Bookings() {
 								value={date}
 								onChange={handleDateChange}
 								options={dateOptions}
+								placeholder="Sélectionnez une date..."
 							/>
 						</div>
 						<div className={styles.field}>

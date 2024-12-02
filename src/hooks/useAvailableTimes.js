@@ -1,9 +1,7 @@
 import { useState } from "react";
 
 const useAvailableTimes = () => {
-	const [availableTimes, setAvailableTimes] = useState([
-		"Cliquez sur une date pour voir les horaires disponibles",
-	]);
+	const [availableTimes, setAvailableTimes] = useState([]);
 
 	const updateAvailableTimes = (selectedDate) => {
 		const dayOfWeek = selectedDate.getDay(); // 0 = dimanche, ..., 6 = samedi
