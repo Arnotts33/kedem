@@ -10,6 +10,7 @@
 .menuTitle {
 	font-family: var(--ff-halimun);
 	font-weight: var(--fw-bold);
+
 	color: var(--heading-primary);
 }
 
@@ -25,6 +26,7 @@
 .menu h3 {
 	font-weight: var(--fw-medium);
 	color: var(--heading-primary);
+	font-size: 1.25rem;
 }
 
 /* Media Queries */

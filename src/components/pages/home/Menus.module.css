@@ -16,7 +16,7 @@
 .title h2 {
 	font-family: var(--ff-halimun);
 	color: var(--heading-primary);
-	font-size: clamp(2rem, 6vw, 4rem);
+	font-size: clamp(2.25rem, 6vw, 4rem);
 	font-weight: var(--fw-bold);
 }
 
