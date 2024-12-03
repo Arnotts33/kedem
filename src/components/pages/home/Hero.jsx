@@ -18,7 +18,11 @@ function Hero() {
 					<p className={styles.subtitle}>Restaurant</p>
 				</div>
 				<div className={styles.heroImg}>
-					<img src={illustration} alt="Illustration Marche" />
+					<img
+						src={illustration}
+						alt="Illustration Marche"
+						loading="lazy"
+					/>
 				</div>
 			</div>
 
