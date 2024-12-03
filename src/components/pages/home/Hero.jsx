@@ -21,7 +21,8 @@ function Hero() {
 					<img
 						src={illustration}
 						alt="Illustration Marche"
-						loading="lazy"
+						width={442}
+						height={574}
 					/>
 				</div>
 			</div>
