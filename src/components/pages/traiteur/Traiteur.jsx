@@ -113,9 +113,9 @@ function Traiteur() {
 						<Button type="submit" disabled={isSubmitting}>
 							Envoyer
 						</Button>
-						{isSubmitting && <FormLoader />}
 					</div>
 					<div className={styles.result}>
+						{isSubmitting && <FormLoader />}
 						{result && <p className={styles.result}>{result}</p>}
 					</div>
 				</form>
