@@ -55,6 +55,7 @@
 
 .chefsTitle {
 	font-size: clamp(2rem, 3.75vw, 3.5rem);
+	font-weight: var(--fw-medium);
 }
 
 .chefsText {

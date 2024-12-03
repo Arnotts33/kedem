@@ -11,6 +11,7 @@ function Traiteur() {
 	const { result, isSubmitting, handleSubmit } = useWeb3Form(accessKey);
 
 	const [date, setDate] = useState();
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
@@ -82,6 +83,7 @@ function Traiteur() {
 							<Flatpickr
 								value={date}
 								onChange={() => setDate(date)}
+								options={{ dateFormat: "d/m/Y" }}
 								name="date"
 								placeholder="Sélectionnez une date..."
 							/>

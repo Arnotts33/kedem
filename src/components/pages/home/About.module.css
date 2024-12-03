@@ -10,7 +10,7 @@
 .title {
 	flex: 45%;
 	font-family: var(--ff-satoshi);
-	font-weight: var(--fw-regular);
+	font-weight: var(--fw-medium);
 	color: var(--heading-primary);
 	font-size: clamp(1.5rem, 5vw, 3.5rem);
 	line-height: 1.5;

@@ -1,5 +1,5 @@
 import styles from "./Hero.module.css";
-// import illustration from "../../../assets/images/illustration-marche.webp";
+import illustration from "../../../assets/images/illustration-marche.webp";
 import plante from "../../../assets/images/kedem-plantes-pois.svg";
 // import cafe from "../../../assets/images/kedem-cafe.svg";
 
@@ -18,15 +18,8 @@ function Hero() {
 					<p className={styles.subtitle}>Restaurant</p>
 				</div>
 				<div className={styles.heroImg}>
-					{/* <img
-						src={illustration}
-						alt="Illustration Marche"
-						width={345}
-						height={343}
-						fetchPriority="high"
-					/> */}
 					<img
-						src="/images/illustration-marche.webp"
+						src={illustration}
 						alt="Illustration Marche"
 						width={345}
 						height={343}

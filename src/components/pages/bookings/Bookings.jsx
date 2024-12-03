@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Flatpickr from "react-flatpickr";
+
 import "flatpickr/dist/themes/material_orange.css";
 import styles from "./Bookings.module.css";
 import Button from "../../ui/buttons/Button";
