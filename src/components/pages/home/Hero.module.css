@@ -42,7 +42,8 @@
 
 .heroImg img {
 	width: 100%;
-	aspect-ratio: 442 / 574;
+	/* aspect-ratio: 442 / 574; */
+	height: auto;
 	object-fit: cover;
 	border-top-left-radius: 48%;
 	border-top-right-radius: 48%;
