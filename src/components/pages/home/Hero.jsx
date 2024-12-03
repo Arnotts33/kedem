@@ -26,7 +26,7 @@ function Hero() {
 						fetchPriority="high"
 					/> */}
 					<img
-						src="/src/assets/images/illustration-marche.webp"
+						src="/images/illustration-marche.webp"
 						alt="Illustration Marche"
 						width={345}
 						height={343}
