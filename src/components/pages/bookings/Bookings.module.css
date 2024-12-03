@@ -85,6 +85,14 @@
 	margin: auto;
 }
 
+.result {
+	margin: 0 auto;
+	text-align: center;
+	color: var(--heading-primary);
+	font-weight: var(--fw-bold);
+	font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
 	.sectionTitle {

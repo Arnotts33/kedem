@@ -7,7 +7,6 @@ function useWeb3Form(accessKey) {
 	const handleSubmit = async (event) => {
 		event.preventDefault();
 		setIsSubmitting(true);
-		setResult("Envoi en cours...");
 
 		const formData = new FormData(event.target);
 		formData.append("access_key", accessKey);

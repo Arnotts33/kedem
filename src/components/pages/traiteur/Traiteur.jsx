@@ -4,6 +4,7 @@ import "flatpickr/dist/themes/material_orange.css";
 import Button from "../../ui/buttons/Button";
 import styles from "./Traiteur.module.css";
 import useWeb3Form from "../../../hooks/useWeb3Form";
+import FormLoader from "../../ui/loaders/FormLoader";
 
 function Traiteur() {
 	const accessKey = "49c64825-8d1a-4fde-9b75-5da2b5872dbc";
@@ -112,7 +113,10 @@ function Traiteur() {
 						<Button type="submit" disabled={isSubmitting}>
 							Envoyer
 						</Button>
-						{isSubmitting && <p>Envoi en cours...</p>}
+						{isSubmitting && <FormLoader />}
+					</div>
+					<div className={styles.result}>
+						{result && <p className={styles.result}>{result}</p>}
 					</div>
 				</form>
 				{result && <p className={styles.result}>{result}</p>}

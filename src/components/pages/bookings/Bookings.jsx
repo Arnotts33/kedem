@@ -6,13 +6,15 @@ import Button from "../../ui/buttons/Button";
 import dateOptions from "../../../lib/flatPickrConfig";
 import useAvailableTimes from "../../../hooks/useAvailableTimes";
 import useWeb3Form from "../../../hooks/useWeb3Form";
+import FormLoader from "../../ui/loaders/FormLoader";
 
 function Bookings() {
 	const accessKey = "49c64825-8d1a-4fde-9b75-5da2b5872dbc";
+
 	const { result, isSubmitting, handleSubmit } = useWeb3Form(accessKey);
+	const { availableTimes, updateAvailableTimes } = useAvailableTimes();
 
 	const [date, setDate] = useState();
-	const { availableTimes, updateAvailableTimes } = useAvailableTimes();
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -132,10 +134,12 @@ function Bookings() {
 						<Button type="submit" disabled={isSubmitting}>
 							Envoyer
 						</Button>
-						{isSubmitting && <p>Envoi en cours...</p>}
+						{isSubmitting && <FormLoader />}
+					</div>
+					<div className={styles.result}>
+						{result && <p className={styles.result}>{result}</p>}
 					</div>
 				</form>
-				{result && <p className={styles.result}>{result}</p>}
 			</section>
 		</div>
 	);
