@@ -21,8 +21,8 @@ function Hero() {
 					<img
 						src={illustration}
 						alt="Illustration Marche"
-						width={442}
-						height={574}
+						// width={345}
+						// height={343}
 						fetchPriority="high"
 					/>
 				</div>
