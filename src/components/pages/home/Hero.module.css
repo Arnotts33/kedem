@@ -40,12 +40,22 @@
 	z-index: 1;
 }
 
-.heroImg img {
+/* .heroImg img {
 	width: 100%;
 	aspect-ratio: 442 / 574;
 	object-fit: cover;
 	border-top-left-radius: 48%;
 	border-top-right-radius: 48%;
+} */
+
+.heroImg img {
+	width: 100%;
+	max-width: 442px;
+	aspect-ratio: 442 / 574;
+	object-fit: cover;
+	border-top-left-radius: 48%;
+	border-top-right-radius: 48%;
+	height: auto;
 }
 
 .peaImg {

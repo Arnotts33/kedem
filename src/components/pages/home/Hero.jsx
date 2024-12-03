@@ -23,6 +23,7 @@ function Hero() {
 						alt="Illustration Marche"
 						width={442}
 						height={574}
+						fetchPriority="high"
 					/>
 				</div>
 			</div>
