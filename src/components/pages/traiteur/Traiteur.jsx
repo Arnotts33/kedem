@@ -121,7 +121,6 @@ function Traiteur() {
 						{result && <p className={styles.result}>{result}</p>}
 					</div>
 				</form>
-				{result && <p className={styles.result}>{result}</p>}
 			</section>
 		</div>
 	);
