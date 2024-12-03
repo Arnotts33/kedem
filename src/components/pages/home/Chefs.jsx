@@ -6,14 +6,19 @@ function Chefs() {
 	return (
 		<section className={styles.chefsSection}>
 			<div className={styles.chefsContainer}>
+				{/* <img
+					src={lemons}
+					alt="Citrons noirs"
+					className={styles.lemons}
+					loading="lazy"
+				/> */}
 				<div className={styles.chefsImg}>
 					<img
-						src={lemons}
-						alt="Citrons noirs"
-						className={styles.lemons}
+						src={chefs}
+						alt="Chefs devant le restaurant"
+						className={styles.chefs}
 						loading="lazy"
 					/>
-					<img src={chefs} alt="Chefs" className={styles.chefs} />
 				</div>
 				<div className={styles.chefsContent}>
 					<h2 className={styles.chefsTitle}>Raconter une histoire</h2>
