@@ -30,8 +30,8 @@
 }
 
 .heroImg {
-	width: clamp(300px, 40%, 442px);
-	max-width: 442px;
+	width: clamp(250px, 40%, 442px);
+	/* max-width: 442px; */
 	padding-top: 1rem;
 	z-index: 1;
 }
