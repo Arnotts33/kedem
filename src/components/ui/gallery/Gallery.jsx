@@ -6,7 +6,6 @@ import thonImg from "../../../assets/images/thon.webp";
 import briocheImg from "../../../assets/images/brioche.webp";
 import bbqImg from "../../../assets/images/bbq.webp";
 import confitImg from "../../../assets/images/confit.webp";
-import dessertImg from "../../../assets/images/dessert.webp";
 import hummusImg from "../../../assets/images/hummus.webp";
 import { useGSAP } from "@gsap/react";
 
@@ -21,7 +20,7 @@ function Gallery() {
 	useGSAP(() => {
 		columnRefs.current.forEach((col, index) => {
 			gsap.to(col, {
-				y: index % 2 === 0 ? "-100vh" : "100vh",
+				y: index % 2 === 0 ? "-140vh" : "100vh",
 				ease: "none",
 				scrollTrigger: {
 					trigger: sectionRef.current,

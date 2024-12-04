@@ -37,23 +37,23 @@
 	--fw-bold: 700;
 
 	/* Colors */
-	--heading-primary: hsl(89, 23%, 26%);
+	--heading-primary: hsl(156, 14%, 34%);
 	--heading-secondary: hsl(45, 80%, 94%);
 	--text-primary: hsl(80, 4%, 16%);
-	--text-secondary: hsl(45, 80%, 94%);
+	--text-secondary: hsl(46, 84%, 95%);
 
-	--bg-primary: hsl(45, 80%, 94%);
-	--bg-secondary: hsl(156, 14%, 52%);
-	--bg-secondary-transparent: hsla(156, 14%, 52%, 0.85);
+	--bg-primary: hsl(46, 81%, 94%);
+	--bg-secondary: hsl(157, 15%, 41%);
+	--bg-secondary-transparent: hsla(157, 15%, 41%, 0.85);
 
 	--btn-accent: hsl(30, 99%, 39%);
-	--btn-accent-hover: hsl(27, 99%, 32%);
-	--btn-text: hsl(45, 80%, 94%);
+	--btn-accent-hover: hsl(30, 99%, 35%);
+	--btn-text: hsl(48, 100%, 99%);
 
 	--input-outline: hsla(30, 98%, 21%, 0.5);
 
 	--icon-yellow: hsl(45, 100%, 44%);
-	--icon-green: hsla(88, 23%, 26%, 0.6);
+	--icon-green: hsla(157, 14%, 25%, 0.6);
 	--icon-orange: hsl(30, 98%, 21%);
 	--icon-gray: hsla(80, 4%, 16%, 0.8);
 }
