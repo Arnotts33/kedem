@@ -1,14 +1,29 @@
 .chefsSection {
 	min-height: 100svh;
 	width: 94%;
-	/* max-width: 84.75rem; */
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
+	position: relative;
+}
+
+.citronNoirImg {
+	position: absolute;
+	width: clamp(65px, 12%, 200px);
+	right: 6%;
+	top: 24%;
+	z-index: 0;
+}
+
+.epicesImg {
+	position: absolute;
+	width: clamp(65px, 12%, 300px);
+	left: 2%;
+	top: 65%;
+	z-index: 0;
 }
 
 .chefsContainer {
-	/* min-height: 90svh; */
 	width: 100%;
 	max-width: 85rem;
 	padding-block: 8rem;
@@ -29,20 +44,12 @@
 	padding-right: 1rem;
 }
 
-.chefsContainer .lemons {
-	position: absolute;
-	width: clamp(65px, 12%, 150px);
-	left: 40px;
-	top: 25px;
-	z-index: 0;
-}
-
 .chefsImg .chefs {
 	width: 100%;
 	max-width: 480px;
 	aspect-ratio: 480 / 616;
 	object-fit: cover;
-	border: 0.5rem solid var(--heading-primary);
+	border: 1rem solid var(--heading-primary);
 	border-top-left-radius: 48%;
 	border-top-right-radius: 48%;
 	z-index: 1;

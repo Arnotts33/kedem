@@ -1,17 +1,24 @@
 import styles from "./Chefs.module.css";
 import chefs from "../../../assets/images/chefs.webp";
-// import lemons from "../../../assets/images/kedem-citrons.svg";
+
+import citronNoirImg from "../../../assets/images/kedem-citron-noir.svg";
+
+import epicesImg from "../../../assets/images/kedem-epices.svg";
 
 function Chefs() {
 	return (
 		<section className={styles.chefsSection}>
+			<img
+				src={citronNoirImg}
+				className={styles.citronNoirImg}
+				alt="Citron noir"
+			/>
+			<img
+				src={epicesImg}
+				className={styles.epicesImg}
+				alt="Sacs d'épices"
+			/>
 			<div className={styles.chefsContainer}>
-				{/* <img
-					src={lemons}
-					alt="Citrons noirs"
-					className={styles.lemons}
-					loading="lazy"
-				/> */}
 				<div className={styles.chefsImg}>
 					<img
 						src={chefs}

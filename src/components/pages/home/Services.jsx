@@ -2,10 +2,14 @@ import { Link } from "react-router-dom";
 import Button from "../../ui/buttons/Button";
 import styles from "./Services.module.css";
 import chefs from "../../../assets/images/gilronan.webp";
+import cafeImg from "../../../assets/images/kedem-cafe.svg";
+import challahImg from "../../../assets/images/kedem-challah.svg";
 
 function Services() {
 	return (
 		<section className={styles.servicesSection}>
+			<img src={cafeImg} className={styles.cafeImg} alt="Café" />
+			<img src={challahImg} className={styles.challahImg} alt="Challah" />
 			<div className={styles.servicesContainer}>
 				<div className={styles.servicesContent}>
 					<h2 className={styles.servicesTitle}>Kedem Traiteur</h2>

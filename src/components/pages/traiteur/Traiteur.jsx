@@ -5,6 +5,7 @@ import Button from "../../ui/buttons/Button";
 import styles from "./Traiteur.module.css";
 import useWeb3Form from "../../../hooks/useWeb3Form";
 import FormLoader from "../../ui/loaders/FormLoader";
+import fleurSVG from "../../../assets/images/kedem-fleur.svg";
 
 function Traiteur() {
 	const accessKey = "49c64825-8d1a-4fde-9b75-5da2b5872dbc";
@@ -18,6 +19,7 @@ function Traiteur() {
 
 	return (
 		<div className={styles.container}>
+			<img className={styles.fleurImg} src={fleurSVG} alt="Fleur" />
 			<section className={styles.sectionTitle}>
 				<h1 className={styles.title}>Traiteur</h1>
 				<p className={styles.subtitle}>

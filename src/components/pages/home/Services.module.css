@@ -1,14 +1,29 @@
 .servicesSection {
 	min-height: 100svh;
 	width: 94%;
-	/* max-width: 84.75rem; */
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
+	position: relative;
+}
+
+.cafeImg {
+	position: absolute;
+	width: clamp(65px, 12%, 200px);
+	right: 6%;
+	top: 24%;
+	z-index: 0;
+}
+
+.challahImg {
+	position: absolute;
+	width: clamp(65px, 8%, 250px);
+	left: 2%;
+	top: 65%;
+	z-index: 0;
 }
 
 .servicesContainer {
-	/* min-height: 90svh; */
 	width: 100%;
 	max-width: 85rem;
 	padding-block: 8rem;
@@ -34,7 +49,7 @@
 	max-width: 480px;
 	aspect-ratio: 480 / 616;
 	object-fit: cover;
-	border: 0.5rem solid var(--heading-primary);
+	border: 1rem solid var(--heading-primary);
 	border-top-left-radius: 48%;
 	border-top-right-radius: 48%;
 	z-index: 1;
@@ -48,7 +63,7 @@
 }
 
 .servicesTitle {
-	font-size: clamp(2rem, 4.25vw, 3.5rem);
+	font-size: clamp(2rem, 3.75vw, 3.5rem);
 	font-weight: var(--fw-medium);
 }
 
