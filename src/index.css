@@ -73,11 +73,11 @@ html {
 	line-height: 1.5;
 }
 
-body {
+/* body {
 	background: url("/src/assets/images/bg.svg");
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
+} */
 
 img,
 picture,
