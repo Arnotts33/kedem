@@ -74,7 +74,8 @@ html {
 }
 
 body {
-	background-color: var(--bg-primary);
+	position: relative;
+	/* background-color: var(--bg-primary); */
 	/* background: url("/src/assets/images/bg.svg");
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale; */

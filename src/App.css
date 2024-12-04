@@ -7,3 +7,15 @@ p {
 	font-family: var(--ff-satoshi);
 	font-weight: var(-fw-regular);
 }
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-repeat: repeat;
+	background-image: url("./assets/images/bg.svg");
+	mix-blend-mode: multiply;
+	pointer-events: none;
+}
