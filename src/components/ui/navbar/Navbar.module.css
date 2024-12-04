@@ -2,6 +2,12 @@
 	height: 150px;
 	display: flex;
 	justify-content: center;
+	/* border-bottom: 1px solid black; */
+	background: url("/src/assets/images/bg.svg");
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	z-index: 1000;
 }
 
 .navbar {
