@@ -1,8 +1,6 @@
 import styles from "./Chefs.module.css";
 import chefs from "../../../assets/images/chefs.webp";
-
 import citronNoirImg from "../../../assets/images/kedem-citron-noir.svg";
-
 import epicesImg from "../../../assets/images/kedem-epices.svg";
 
 function Chefs() {

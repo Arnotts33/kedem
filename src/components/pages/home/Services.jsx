@@ -30,11 +30,6 @@ function Services() {
 					</Link>
 				</div>
 				<div className={styles.chefsImg}>
-					{/* <img
-				src={lemons}
-				alt="Citrons noirs"
-				className={styles.lemons}
-			/> */}
 					<img
 						src={chefs}
 						alt="Chefs"

@@ -11,6 +11,8 @@
 	width: 50%;
 	aspect-ratio: 442 / 574;
 	object-fit: cover;
+	padding: 0.5rem;
+	border: 2px solid var(--icon-orange);
 	border-top-left-radius: 48%;
 	border-top-right-radius: 48%;
 	cursor: pointer;
@@ -19,4 +21,5 @@
 .caption {
 	text-transform: uppercase;
 	letter-spacing: 0.25rem;
+	font-weight: var(--fw-medium);
 }

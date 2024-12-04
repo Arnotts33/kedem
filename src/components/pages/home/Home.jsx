@@ -8,7 +8,7 @@ import Services from "./Services";
 
 function Home() {
 	return (
-		<div className={styles.container}>
+		<div className={styles.mainContainer}>
 			<Hero />
 			<About />
 			<Chefs />
