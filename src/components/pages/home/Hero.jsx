@@ -1,5 +1,5 @@
 import styles from "./Hero.module.css";
-import illustration from "../../../assets/images/illustration-marche.webp";
+import illustration from "../../../assets/images/marche.webp";
 import planteSVG from "../../../assets/images/kedem-plantes-pois.svg";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
