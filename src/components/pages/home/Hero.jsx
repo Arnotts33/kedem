@@ -1,5 +1,5 @@
 import styles from "./Hero.module.css";
-import illustration from "../../../assets/images/illustration-marche.webp";
+import illustration from "/images/illustration-marche.webp";
 import planteSVG from "../../../assets/images/kedem-plantes-pois.svg";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -70,6 +70,7 @@ function Hero() {
 						alt="Illustration Marche"
 						width={345}
 						height={343}
+						fetchPriority="high"
 					/>
 				</div>
 			</div>
