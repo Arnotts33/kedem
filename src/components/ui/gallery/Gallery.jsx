@@ -27,6 +27,7 @@ function Gallery() {
 					start: "top top",
 					end: "bottom bottom",
 					scrub: true,
+					willChange: "transform",
 				},
 			});
 		});

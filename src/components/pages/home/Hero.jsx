@@ -19,7 +19,6 @@ function Hero() {
 			scale: 1.5,
 			duration: 2.5,
 			ease: "power2.inOut",
-			willChange: "opacity, scale",
 		});
 		tl.from(
 			titleRef.current,
@@ -28,7 +27,6 @@ function Hero() {
 				opacity: 0,
 				duration: 2,
 				ease: "power3.inOut",
-				willChange: "opacity, transform",
 			},
 			"-=2.0"
 		)
@@ -38,7 +36,6 @@ function Hero() {
 					x: -300,
 					duration: 2,
 					ease: "power3.inOut",
-					willChange: "transform",
 				},
 				"-=2.0"
 			)
@@ -48,7 +45,6 @@ function Hero() {
 					x: 300,
 					duration: 2,
 					ease: "power3.inOut",
-					willChange: "transform",
 				},
 				"-=2.0"
 			);
