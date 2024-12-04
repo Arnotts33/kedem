@@ -19,34 +19,36 @@ function Hero() {
 			scale: 2,
 			duration: 2.5,
 			ease: "power4.inOut",
-		}).from(
-			titleRef.current,
-			{
-				y: -300,
-				opacity: 0,
-				duration: 2,
-				ease: "power3.inOut",
-			},
-			"-=2.2"
-		);
-		// .from(
-		// 	leftPeaImgRef.current,
-		// 	{
-		// 		x: -300,
-		// 		duration: 2,
-		// 		ease: "power3.inOut",
-		// 	},
-		// 	"-=2.2"
-		// )
-		// .from(
-		// 	rightPeaImgRef.current,
-		// 	{
-		// 		x: 300,
-		// 		duration: 2,
-		// 		ease: "power3.inOut",
-		// 	},
-		// 	"-=2.2"
-		// );
+			willChange: "transform",
+		})
+			.from(
+				titleRef.current,
+				{
+					y: -300,
+					opacity: 0,
+					duration: 2,
+					ease: "power3.inOut",
+				},
+				"-=2.2"
+			)
+			.from(
+				leftPeaImgRef.current,
+				{
+					x: -300,
+					duration: 2,
+					ease: "power3.inOut",
+				},
+				"-=2.2"
+			)
+			.from(
+				rightPeaImgRef.current,
+				{
+					x: 300,
+					duration: 2,
+					ease: "power3.inOut",
+				},
+				"-=2.2"
+			);
 	}, []);
 
 	return (
