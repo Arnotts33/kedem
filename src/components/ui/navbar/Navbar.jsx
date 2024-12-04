@@ -12,17 +12,17 @@ function Navbar() {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 	const headerRef = useRef(null);
 
-	// useGSAP(() => {
-	// 	const tl = gsap.timeline();
+	useGSAP(() => {
+		const tl = gsap.timeline();
 
-	// 	tl.from(headerRef.current, {
-	// 		opacity: 0,
-	// 		y: -100,
-	// 		duration: 2.2,
-	// 		delay: 0.5,
-	// 		ease: "power4.inOut",
-	// 	});
-	// }, []);
+		tl.from(headerRef.current, {
+			opacity: 0,
+			y: -100,
+			duration: 2.2,
+			delay: 0.5,
+			ease: "power4.inOut",
+		});
+	}, []);
 
 	function closeMobileMenu() {
 		setIsMobileMenuOpen(false);

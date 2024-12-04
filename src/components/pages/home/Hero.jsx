@@ -16,7 +16,7 @@ function Hero() {
 
 		tl.from(heroImgRef.current, {
 			opacity: 0,
-			scale: 2,
+			scale: 1.5,
 			duration: 2.5,
 			ease: "power2.inOut",
 			willChange: "opacity, scale",
@@ -29,7 +29,7 @@ function Hero() {
 				duration: 2,
 				ease: "power3.inOut",
 			},
-			"-=2.2"
+			"-=2.0"
 		)
 			.from(
 				leftPeaImgRef.current,
@@ -38,7 +38,7 @@ function Hero() {
 					duration: 2,
 					ease: "power3.inOut",
 				},
-				"-=2.2"
+				"-=2.0"
 			)
 			.from(
 				rightPeaImgRef.current,
@@ -47,7 +47,7 @@ function Hero() {
 					duration: 2,
 					ease: "power3.inOut",
 				},
-				"-=2.2"
+				"-=2.0"
 			);
 	}, []);
 
