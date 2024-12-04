@@ -2,26 +2,26 @@
 
 @font-face {
 	font-family: "Halimun";
-	src: url("/src/assets/fonts/Halimun/halimun.woff2") format("woff2");
+	src: url("/fonts/Halimun/halimun.woff2") format("woff2");
 }
 
 @font-face {
 	font-family: "Satoshi";
-	src: url("/src/assets/fonts/Satoshi/Satoshi-Regular.woff2") format("woff2");
+	src: url("/fonts/Satoshi/Satoshi-Regular.woff2") format("woff2");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Satoshi";
-	src: url("/src/assets/fonts/Satoshi/Satoshi-Medium.woff2") format("woff2");
+	src: url("/fonts/Satoshi/Satoshi-Medium.woff2") format("woff2");
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Satoshi";
-	src: url("/src/assets/fonts/Satoshi/Satoshi-Bold.woff2") format("woff2");
+	src: url("/fonts/Satoshi/Satoshi-Bold.woff2") format("woff2");
 	font-weight: 700;
 	font-style: normal;
 }
@@ -73,11 +73,9 @@ html {
 	line-height: 1.5;
 }
 
-/* body {
-	background: url("/src/assets/images/bg.svg");
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-} */
+body {
+	background-color: var(--bg-primary);
+}
 
 img,
 picture,
