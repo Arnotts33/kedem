@@ -14,19 +14,23 @@ function Hero() {
 	useGSAP(() => {
 		const tl = gsap.timeline();
 
-		// tl.from(heroImgRef.current, {
-		// 	opacity: 0,
-		// 	scale: 2,
-		// 	duration: 2.5,
-		// 	ease: "power2.inOut",
-		// 	willChange: "opacity, scale",
-		// })
-		tl.from(titleRef.current, {
-			y: -300,
+		tl.from(heroImgRef.current, {
 			opacity: 0,
-			duration: 2,
-			ease: "power3.inOut",
-		})
+			scale: 2,
+			duration: 2.5,
+			ease: "power2.inOut",
+			willChange: "opacity, scale",
+		});
+		tl.from(
+			titleRef.current,
+			{
+				y: -300,
+				opacity: 0,
+				duration: 2,
+				ease: "power3.inOut",
+			},
+			"-=2.2"
+		)
 			.from(
 				leftPeaImgRef.current,
 				{
