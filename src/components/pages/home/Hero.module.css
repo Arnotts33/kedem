@@ -21,6 +21,7 @@
 
 .title {
 	font-size: clamp(2.25rem, 8vw, 6rem);
+	margin-top: 1rem;
 }
 
 .subtitle {
