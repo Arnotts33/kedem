@@ -22,7 +22,7 @@ function Chefs() {
 						src={chefs}
 						alt="Chefs devant le restaurant"
 						className={styles.chefs}
-						loading="lazy"
+						// loading="lazy"
 					/>
 				</div>
 				<div className={styles.chefsContent}>
