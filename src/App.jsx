@@ -33,7 +33,6 @@ function App() {
 				<Route path="/contact" element={<Contact />} />
 			</Routes>
 			<Footer />
-			<div className="overlay"></div>
 			<SpeedInsights />
 		</>
 	);
