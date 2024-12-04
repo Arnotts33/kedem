@@ -42,6 +42,7 @@
 	max-width: 480px;
 	aspect-ratio: 480 / 616;
 	object-fit: cover;
+	border: 0.5rem solid var(--heading-primary);
 	border-top-left-radius: 48%;
 	border-top-right-radius: 48%;
 	z-index: 1;

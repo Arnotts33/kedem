@@ -32,7 +32,7 @@
 .footerTitle {
 	font-family: var(--ff-halimun);
 	color: var(--heading-primary);
-	font-weight: var(--fw-medium);
+	font-weight: var(--fw-bold);
 	font-size: 3rem;
 	margin-bottom: 2rem;
 }

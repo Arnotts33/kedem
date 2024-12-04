@@ -1,13 +1,13 @@
 import styles from "./Hero.module.css";
 import illustration from "../../../assets/images/illustration-marche.webp";
-import plante from "../../../assets/images/kedem-plantes-pois.svg";
+import planteSVG from "../../../assets/images/kedem-plantes-pois.svg";
 
 function Hero() {
 	return (
 		<section className={styles.container}>
 			<img
 				className={styles.peaImg}
-				src={plante}
+				src={planteSVG}
 				alt="Feuilles de pois chiches"
 			/>
 
@@ -28,7 +28,7 @@ function Hero() {
 			</div>
 			<img
 				className={styles.peaImgRight}
-				src={plante}
+				src={planteSVG}
 				alt="Feuilles de pois chiches"
 			/>
 		</section>

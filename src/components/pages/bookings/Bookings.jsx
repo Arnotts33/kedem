@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Flatpickr from "react-flatpickr";
-
 import "flatpickr/dist/themes/material_orange.css";
 import styles from "./Bookings.module.css";
 import Button from "../../ui/buttons/Button";
@@ -8,6 +7,7 @@ import dateOptions from "../../../lib/flatPickrConfig";
 import useAvailableTimes from "../../../hooks/useAvailableTimes";
 import useWeb3Form from "../../../hooks/useWeb3Form";
 import FormLoader from "../../ui/loaders/FormLoader";
+import fleurSVG from "../../../assets/images/kedem-fleur.svg";
 
 function Bookings() {
 	const accessKey = "49c64825-8d1a-4fde-9b75-5da2b5872dbc";
@@ -29,6 +29,7 @@ function Bookings() {
 
 	return (
 		<div className={styles.container}>
+			<img className={styles.fleurImg} src={fleurSVG} alt="Fleur" />
 			<section className={styles.sectionTitle}>
 				<h1 className={styles.title}>Réservations</h1>
 				<p className={styles.subtitle}>
@@ -41,6 +42,7 @@ function Bookings() {
 					accueillir.
 				</p>
 			</section>
+
 			<section className={styles.formSection}>
 				<form onSubmit={handleSubmit}>
 					<div className={styles.grid}>

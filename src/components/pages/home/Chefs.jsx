@@ -1,6 +1,6 @@
 import styles from "./Chefs.module.css";
 import chefs from "../../../assets/images/chefs.webp";
-import lemons from "../../../assets/images/kedem-citrons.svg";
+// import lemons from "../../../assets/images/kedem-citrons.svg";
 
 function Chefs() {
 	return (
