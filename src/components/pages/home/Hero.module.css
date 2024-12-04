@@ -1,5 +1,5 @@
 .heroSection {
-	min-height: calc(100vh - 150px);
+	min-height: calc(100svh - 150px);
 	width: 100%;
 	position: relative;
 }
