@@ -21,6 +21,7 @@ function Navbar() {
 			duration: 2.2,
 			delay: 0.5,
 			ease: "power4.inOut",
+			willChange: "opacity, transform",
 		});
 	}, []);
 

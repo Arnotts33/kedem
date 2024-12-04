@@ -28,37 +28,40 @@ function Hero() {
 				opacity: 0,
 				duration: 2,
 				ease: "power3.inOut",
+				willChange: "opacity, transform",
 			},
 			"-=2.0"
-		);
-		// .from(
-		// 	leftPeaImgRef.current,
-		// 	{
-		// 		x: -300,
-		// 		duration: 2,
-		// 		ease: "power3.inOut",
-		// 	},
-		// 	"-=2.0"
-		// )
-		// .from(
-		// 	rightPeaImgRef.current,
-		// 	{
-		// 		x: 300,
-		// 		duration: 2,
-		// 		ease: "power3.inOut",
-		// 	},
-		// 	"-=2.0"
-		// );
+		)
+			.from(
+				leftPeaImgRef.current,
+				{
+					x: -300,
+					duration: 2,
+					ease: "power3.inOut",
+					willChange: "transform",
+				},
+				"-=2.0"
+			)
+			.from(
+				rightPeaImgRef.current,
+				{
+					x: 300,
+					duration: 2,
+					ease: "power3.inOut",
+					willChange: "transform",
+				},
+				"-=2.0"
+			);
 	}, []);
 
 	return (
 		<section className={styles.heroSection}>
-			{/* <img
+			<img
 				className={styles.peaImg}
 				src={planteSVG}
 				ref={leftPeaImgRef}
 				alt="Feuilles de pois chiches"
-			/> */}
+			/>
 
 			<div className={styles.heroCenter}>
 				<div className={styles.heroTitle} ref={titleRef}>
@@ -74,12 +77,12 @@ function Hero() {
 					/>
 				</div>
 			</div>
-			{/* <img
+			<img
 				className={styles.peaImgRight}
 				src={planteSVG}
 				ref={rightPeaImgRef}
 				alt="Feuilles de pois chiches"
-			/> */}
+			/>
 		</section>
 	);
 }
