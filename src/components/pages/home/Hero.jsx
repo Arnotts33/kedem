@@ -18,8 +18,8 @@ function Hero() {
 			opacity: 0,
 			scale: 2,
 			duration: 2.5,
-			ease: "power4.inOut",
-			willChange: "transform",
+			ease: "power2.inOut",
+			willChange: "opacity, scale",
 		})
 			.from(
 				titleRef.current,
