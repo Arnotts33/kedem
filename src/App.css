@@ -8,14 +8,22 @@ p {
 	font-weight: var(-fw-regular);
 }
 
-.overlay {
+.overlay::before {
 	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
 	left: 0;
-	background-repeat: repeat;
-	background-image: url("./assets/images/bg.svg");
-	mix-blend-mode: multiply;
+	top: 0;
+	content: "";
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	opacity: 30%;
+	background: #fff;
+	filter: url(#noiseFilter);
 	pointer-events: none;
+	background-repeat: repeat;
+}
+
+svg {
+	position: absolute;
+	z-index: -1;
 }
