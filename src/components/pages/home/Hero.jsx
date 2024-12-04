@@ -1,5 +1,5 @@
 import styles from "./Hero.module.css";
-import illustration from "../../../assets/images/marche.webp";
+import illustration from "../../../assets/images/illustration-marche.webp";
 import planteSVG from "../../../assets/images/kedem-plantes-pois.svg";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -14,23 +14,19 @@ function Hero() {
 	useGSAP(() => {
 		const tl = gsap.timeline();
 
-		tl.from(heroImgRef.current, {
+		// tl.from(heroImgRef.current, {
+		// 	opacity: 0,
+		// 	scale: 2,
+		// 	duration: 2.5,
+		// 	ease: "power2.inOut",
+		// 	willChange: "opacity, scale",
+		// })
+		tl.from(titleRef.current, {
+			y: -300,
 			opacity: 0,
-			scale: 2,
-			duration: 2.5,
-			ease: "power2.inOut",
-			willChange: "opacity, scale",
+			duration: 2,
+			ease: "power3.inOut",
 		})
-			.from(
-				titleRef.current,
-				{
-					y: -300,
-					opacity: 0,
-					duration: 2,
-					ease: "power3.inOut",
-				},
-				"-=2.2"
-			)
 			.from(
 				leftPeaImgRef.current,
 				{
