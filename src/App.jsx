@@ -33,7 +33,7 @@ function App() {
 				<Route path="/contact" element={<Contact />} />
 			</Routes>
 			<Footer />
-			<svg>
+			{/* <svg>
 				<filter id="noiseFilter">
 					<feTurbulence
 						type="fractalNoise"
@@ -41,9 +41,9 @@ function App() {
 						stitchTiles="stitch"
 					/>
 				</filter>
-			</svg>
+			</svg> */}
 			<SpeedInsights />
-			<div className="overlay"></div>
+			{/* <div className="overlay"></div> */}
 		</>
 	);
 }

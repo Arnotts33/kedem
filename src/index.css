@@ -74,9 +74,9 @@ html {
 }
 
 body {
-	background-color: var(--bg-primary);
-	z-index: 10;
-	position: relative;
+	background-color: hsl(46, 55%, 88%);
+	/* z-index: 10;
+	position: relative; */
 	/* background: url("/src/assets/images/bg.svg");
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale; */
