@@ -6,6 +6,7 @@
 	background: transparent;
 	position: relative;
 	z-index: 1000;
+	will-change: opacity, transform;
 }
 
 .navbar {

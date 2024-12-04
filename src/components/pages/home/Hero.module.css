@@ -17,6 +17,7 @@
 	align-items: center;
 	text-align: center;
 	color: var(--heading-primary);
+	will-change: opacity, transform;
 }
 
 .title {
@@ -31,9 +32,9 @@
 
 .heroImg {
 	width: clamp(250px, 40%, 442px);
-	/* max-width: 442px; */
 	padding-top: 1rem;
 	z-index: 1;
+	will-change: opacity, transform;
 }
 
 .heroImg img {
@@ -49,6 +50,7 @@
 	position: absolute;
 	left: 0;
 	top: 100px;
+	will-change: transform;
 }
 
 .peaImgRight {
@@ -57,6 +59,7 @@
 	right: 0;
 	bottom: 200px;
 	transform: rotateY(-180deg);
+	will-change: transform;
 }
 
 /* Media Queries */

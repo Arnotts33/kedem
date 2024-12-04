@@ -70,7 +70,6 @@ function Hero() {
 						alt="Illustration Marche"
 						width={345}
 						height={343}
-						loading="lazy"
 					/>
 				</div>
 			</div>

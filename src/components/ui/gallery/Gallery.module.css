@@ -7,7 +7,7 @@
 }
 
 .gallerySection h1 {
-	font-size: clamp(3.5rem, 12vw, 12rem);
+	font-size: clamp(3.5rem, 10vw, 10rem);
 	font-family: var(--ff-halimun);
 	position: absolute;
 	left: 50%;
@@ -16,6 +16,9 @@
 	z-index: 1;
 	margin: 0;
 	color: var(--heading-secondary);
+	line-height: 220%;
+	width: 100%;
+	text-align: center;
 }
 
 .gallerySection h1:nth-child(1) {
