@@ -61,7 +61,8 @@ function Footer() {
 							</div>
 							<div className={styles.socials}>
 								<a
-									href="#"
+									href="https://www.instagram.com/restaurantkedem/"
+									target="_blank"
 									aria-label="Link to the restaurant Instagram page"
 								>
 									<img
@@ -71,7 +72,8 @@ function Footer() {
 									/>
 								</a>
 								<a
-									href="#"
+									href="https://www.facebook.com/p/Restaurant-Kedem-61551921728848/"
+									target="_blank"
 									aria-label="Link to the restaurant Facebook page"
 								>
 									<img
