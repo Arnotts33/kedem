@@ -22,6 +22,7 @@ function About() {
 			onEnter: () => {
 				tl.to(btnRef.current, {
 					opacity: 1,
+					display: "block",
 					duration: 0.8,
 					ease: "power4.inOut",
 				});
@@ -30,6 +31,7 @@ function About() {
 			onLeaveBack: () => {
 				tl.to(btnRef.current, {
 					opacity: 0,
+					display: "none",
 					duration: 0.4,
 					ease: "power4.inOut",
 				});
