@@ -39,11 +39,11 @@ function About() {
 
 	return (
 		<section className={styles.aboutSection} ref={sectionRef}>
-			<div className={styles.bookingBtn} ref={btnRef}>
-				<NavLink to="/bookings" className={styles.bookingsLink}>
+			<NavLink to="/bookings" className={styles.bookingsLink}>
+				<div className={styles.bookingBtn} ref={btnRef}>
 					Réserver
-				</NavLink>
-			</div>
+				</div>
+			</NavLink>
 			<h1 className={styles.title}>
 				Goûts et saveurs des pays du Levant
 			</h1>
