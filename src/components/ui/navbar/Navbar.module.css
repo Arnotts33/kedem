@@ -22,7 +22,7 @@
 
 .navMenuList {
 	display: flex;
-	gap: 4rem;
+	gap: 3rem;
 }
 
 .navMenuList li a {
@@ -30,11 +30,11 @@
 	font-family: var(--ff-satoshi);
 	color: var(--heading-primary);
 	font-weight: var(--fw-medium);
-	font-size: 1.25rem;
+	font-size: clamp(1.125rem, 2vw, 1.25rem);
 	padding-block: 0.75rem;
 }
 
-.navMenuList a::before {
+.navMenuList a::before:not(.bookingsLink) {
 	content: "";
 	position: absolute;
 	display: block;
@@ -48,8 +48,16 @@
 	transition: transform 0.3s ease;
 }
 
-.navMenuList a:hover::before {
+.navMenuList a:hover::before:not(.bookingsLink) {
 	transform: scaleX(1);
+}
+
+.navMenuList li.bookingsLink a {
+	background-color: var(--btn-accent);
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+	color: var(--btn-text);
+	font-weight: var(--fw-bold);
 }
 
 .navMobileMenuList {
@@ -101,6 +109,15 @@
 	font-family: var(--ff-satoshi);
 	text-transform: uppercase;
 	transition: all 0.2s ease-out;
+}
+
+.navMobileMenuList li.bookingsLink {
+	background-color: var(--btn-accent);
+}
+
+.navMobileMenuList li.bookingsLink a {
+	color: var(--btn-text);
+	font-weight: var(--fw-bold);
 }
 
 .navMobileMenuList li:hover {

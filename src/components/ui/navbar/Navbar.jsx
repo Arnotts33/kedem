@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-scroll";
 import { useRef, useState } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import styles from "./Navbar.module.css";
-import navigation from "./index";
+// import navigation from "./index";
 import logo from "/images/logo-kedem.svg";
 import menuIcon from "../../../assets/icons/bars-solid.svg";
 import closeMenuIcon from "../../../assets/icons/xmark-solid.svg";
@@ -50,13 +51,25 @@ function Navbar() {
 							Menus
 						</HashLink>
 					</li>
-					{navigation.map((item) => (
-						<li key={item.name}>
-							<NavLink to={item.link} onClick={closeMobileMenu}>
-								{item.name}
-							</NavLink>
-						</li>
-					))}
+					<li>
+						<NavLink to="/traiteur" onClick={closeMobileMenu}>
+							Traiteur
+						</NavLink>
+					</li>
+					<li>
+						<Link
+							smooth={true}
+							to="footer"
+							onClick={closeMobileMenu}
+						>
+							Contact
+						</Link>
+					</li>
+					<li className={styles.bookingsLink}>
+						<NavLink to="/bookings" onClick={closeMobileMenu}>
+							Réservations
+						</NavLink>
+					</li>
 				</ul>
 				<div
 					className={styles.mobileMenu}

@@ -23,6 +23,30 @@
 	color: var(--text-primary);
 }
 
+.bookingBtn {
+	width: clamp(80px, 10%, 120px);
+	aspect-ratio: 1 / 1;
+	background-color: var(--btn-accent);
+	text-align: center;
+	align-content: center;
+	border-radius: 50%;
+	color: var(--text-secondary);
+	font-size: clamp(1rem, 3vw, 1.25rem);
+	font-weight: var(--fw-bold);
+	position: fixed;
+	top: 5%;
+	right: 6%;
+	z-index: 2000;
+	transition: all 0.3s ease-in;
+	opacity: 0;
+}
+
+.bookingBtn:hover {
+	background-color: var(--btn-accent-hover);
+	cursor: pointer;
+	transform: rotate(30deg);
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 1024px) {

@@ -5,7 +5,7 @@ import fbIcon from "../../../assets/icons/facebook.svg";
 
 function Footer() {
 	return (
-		<footer className={styles.footer}>
+		<footer className={styles.footer} id="footer">
 			<div className={styles.footerContainer}>
 				<div className={styles.footerImgContainer}>
 					<img
@@ -56,7 +56,7 @@ function Footer() {
 									Lundi - Vendredi : 12h - 15h
 								</p>
 								<p className={styles.contactText}>
-									Samedi - Dimanche : 19h30 - 23h
+									Jeudi - Vendredi : 19h30 - 23h
 								</p>
 							</div>
 							<div className={styles.socials}>

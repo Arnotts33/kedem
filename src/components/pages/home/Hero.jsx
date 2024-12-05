@@ -4,6 +4,7 @@ import planteSVG from "../../../assets/images/kedem-plantes-pois.svg";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
+import { NavLink } from "react-router-dom";
 
 function Hero() {
 	const leftPeaImgRef = useRef(null);
