@@ -21,18 +21,16 @@ function About() {
 
 			onEnter: () => {
 				tl.to(btnRef.current, {
-					opacity: 1,
-					display: "block",
-					duration: 0.8,
+					autoAlpha: 1,
+					duration: 0.6,
 					ease: "power4.inOut",
 				});
 			},
 
 			onLeaveBack: () => {
 				tl.to(btnRef.current, {
-					opacity: 0,
-					display: "none",
-					duration: 0.4,
+					autoAlpha: 0,
+					duration: 0.6,
 					ease: "power4.inOut",
 				});
 			},
