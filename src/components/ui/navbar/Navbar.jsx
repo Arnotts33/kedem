@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import { Link } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
 import { useRef, useState } from "react";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -57,13 +57,19 @@ function Navbar() {
 						</NavLink>
 					</li>
 					<li>
-						<Link
-							smooth={true}
-							to="footer"
-							onClick={closeMobileMenu}
+						<a
+							href="#footer"
+							onClick={(e) => {
+								e.preventDefault();
+								closeMobileMenu();
+								scroll.scrollToBottom({
+									smooth: true,
+									duration: 800,
+								});
+							}}
 						>
 							Contact
-						</Link>
+						</a>
 					</li>
 					<li className={styles.bookingsLink}>
 						<NavLink to="/bookings" onClick={closeMobileMenu}>
