@@ -17,7 +17,7 @@
 
 .logo img {
 	width: clamp(80px, 10vw, 100px);
-	height: auto;
+	aspect-ratio: 100/100;
 }
 
 .navMenuList {

@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import styles from "./Navbar.module.css";
 import navigation from "./index";
+import logo from "/images/logo-kedem.svg";
 import menuIcon from "../../../assets/icons/bars-solid.svg";
 import closeMenuIcon from "../../../assets/icons/xmark-solid.svg";
 
@@ -33,11 +34,7 @@ function Navbar() {
 			<nav className={styles.navbar}>
 				<div className={styles.logo} onClick={closeMobileMenu}>
 					<NavLink to="/">
-						<img
-							src="/images/logo-kedem.svg"
-							alt="logo"
-							width={100}
-						/>
+						<img src={logo} alt="logo" width="100" height="100" />
 					</NavLink>
 				</div>
 
