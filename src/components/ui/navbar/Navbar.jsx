@@ -33,7 +33,11 @@ function Navbar() {
 			<nav className={styles.navbar}>
 				<div className={styles.logo} onClick={closeMobileMenu}>
 					<NavLink to="/">
-						<img src="/images/logo-kedem.svg" alt="logo" />
+						<img
+							src="/images/logo-kedem.svg"
+							alt="logo"
+							width={100}
+						/>
 					</NavLink>
 				</div>
 

@@ -61,35 +61,6 @@
 	gap: 0.5rem;
 }
 
-.formSection label {
-	font-family: var(--ff-satoshi);
-	font-size: 1rem;
-	color: var(--text-primary);
-}
-
-.formSection input,
-.formSection textarea,
-.formSection select {
-	font-family: var(--ff-satoshi);
-	font-size: 1rem;
-	color: var(--text-primary);
-	padding: 0.5rem;
-	border: none;
-	border-radius: 0.25rem;
-}
-
-.formSection input::placeholder,
-.formSection textarea::placeholder,
-.formSection select::placeholder {
-	opacity: 0.5;
-}
-
-.formSection input:focus,
-.formSection textarea:focus,
-.formSection select:focus {
-	outline: 1px solid var(--input-outline);
-}
-
 .submitBtn {
 	margin: auto;
 }

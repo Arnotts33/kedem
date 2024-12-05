@@ -2,26 +2,30 @@
 
 @font-face {
 	font-family: "Halimun";
-	src: url("/fonts/Halimun/halimun.woff2") format("woff2");
+	src: url("/fonts/Halimun/halimun.woff2") format("woff2"),
+		url("/fonts/Halimun/halimun.ttf") format("truetype");
 }
 
 @font-face {
 	font-family: "Satoshi";
-	src: url("/fonts/Satoshi/Satoshi-Regular.woff2") format("woff2");
+	src: url("/fonts/Satoshi/Satoshi-Regular.woff2") format("woff2"),
+		url("/fonts/Satoshi/Satoshi-Regular.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Satoshi";
-	src: url("/fonts/Satoshi/Satoshi-Medium.woff2") format("woff2");
+	src: url("/fonts/Satoshi/Satoshi-Medium.woff2") format("woff2"),
+		url("/fonts/Satoshi/Satoshi-Medium.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Satoshi";
-	src: url("/fonts/Satoshi/Satoshi-Bold.woff2") format("woff2");
+	src: url("/fonts/Satoshi/Satoshi-Bold.woff2") format("woff2"),
+		url("/fonts/Satoshi/Satoshi-Bold.ttf") format("truetype");
 	font-weight: 700;
 	font-style: normal;
 }
@@ -42,7 +46,7 @@
 	--text-primary: hsl(80, 4%, 16%);
 	--text-secondary: hsl(46, 84%, 95%);
 
-	--bg-primary: hsl(46, 81%, 94%);
+	--bg-primary: hsl(44, 56%, 92%);
 	--bg-secondary: hsl(157, 15%, 41%);
 	--bg-secondary-transparent: hsla(157, 15%, 41%, 0.85);
 
@@ -50,7 +54,8 @@
 	--btn-accent-hover: hsl(30, 99%, 35%);
 	--btn-text: hsl(48, 100%, 99%);
 
-	--input-outline: hsla(30, 98%, 21%, 0.5);
+	--input-outline: hsla(30, 98%, 21%, 0.2);
+	--input-outline-focus: hsla(30, 98%, 21%, 0.4);
 
 	--icon-yellow: hsl(45, 100%, 44%);
 	--icon-green: hsla(157, 14%, 25%, 0.6);
@@ -74,12 +79,10 @@ html {
 }
 
 body {
-	background-color: hsl(46, 55%, 88%);
-	/* z-index: 10;
-	position: relative; */
-	/* background: url("/src/assets/images/bg.svg");
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale; */
+	background-color: var(--bg-primary);
+	/* background-color: hsl(46, 55%, 88%); */
+	font-family: var(--ff-satoshi);
+	font-weight: var(-fw-regular);
 }
 
 img,
@@ -116,10 +119,6 @@ button {
 	cursor: pointer;
 }
 
-textarea {
-	resize: vertical;
-}
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -142,7 +141,50 @@ p {
 
 /* ===== FIN DU RESET ===== */
 
-/* FIREFOX */
+/* ===== CSS BASE ===== */
+
+h1 {
+	font-family: var(--ff-halimun);
+	font-weight: 700;
+}
+
+label {
+	font-family: var(--ff-satoshi);
+	font-size: 1rem;
+	color: var(--text-primary);
+}
+
+textarea {
+	resize: none;
+}
+
+input,
+select,
+textarea {
+	font-family: var(--ff-satoshi);
+	font-size: 1rem;
+	color: var(--text-primary);
+	padding: 0.5rem;
+	border: 0.5px solid var(--input-outline);
+	border-radius: 0.25rem;
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+	opacity: 0.5;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+	outline: 1px solid var(--input-outline-focus);
+}
+
+/* ===== FIN DU CSS BASE ===== */
+
+/* ===== FIREFOX ===== */
+
 @-moz-document url-prefix() {
 	select {
 		background-color: white;
