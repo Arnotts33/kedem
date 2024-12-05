@@ -19,7 +19,7 @@ function Navbar() {
 		tl.from(headerRef.current, {
 			opacity: 0,
 			y: -100,
-			duration: 2.2,
+			duration: 1.5,
 			delay: 0.5,
 			ease: "power4.inOut",
 		});

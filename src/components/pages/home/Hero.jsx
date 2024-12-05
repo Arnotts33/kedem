@@ -16,37 +16,37 @@ function Hero() {
 
 		tl.from(heroImgRef.current, {
 			opacity: 0,
-			scale: 1.5,
-			duration: 2.5,
-			ease: "power2.inOut",
+			scale: 1.3,
+			duration: 2,
+			ease: "power4.inOut",
 		});
 		tl.from(
 			titleRef.current,
 			{
 				y: -300,
 				opacity: 0,
-				duration: 2,
+				duration: 1.5,
 				ease: "power3.inOut",
 			},
-			"-=2.0"
+			"-=1.6"
 		)
 			.from(
 				leftPeaImgRef.current,
 				{
 					x: -300,
-					duration: 2,
+					duration: 1.5,
 					ease: "power3.inOut",
 				},
-				"-=2.0"
+				"-=1.6"
 			)
 			.from(
 				rightPeaImgRef.current,
 				{
 					x: 300,
-					duration: 2,
+					duration: 1.5,
 					ease: "power3.inOut",
 				},
-				"-=2.0"
+				"-=1.6"
 			);
 	}, []);
 
