@@ -10,6 +10,7 @@ import Traiteur from "./components/pages/traiteur/Traiteur";
 import Contact from "./components/pages/contact/Contact";
 import Footer from "./components/ui/footer/Footer";
 import "./App.css";
+import NotFound from "./components/pages/errors/NotFound";
 
 function App() {
 	useEffect(() => {
@@ -31,6 +32,7 @@ function App() {
 				<Route path="/bookings" element={<Bookings />} />
 				<Route path="/traiteur" element={<Traiteur />} />
 				<Route path="/contact" element={<Contact />} />
+				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />
 			<SpeedInsights />

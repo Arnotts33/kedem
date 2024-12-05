@@ -1,0 +1,21 @@
+.notFoundContainer {
+	gap: 4rem;
+	min-height: 100svh;
+	text-align: center;
+	color: #aa6729;
+
+	& h1 {
+		font-size: 6rem;
+		font-family: var(--ff-halimun);
+		margin-top: 8rem;
+	}
+
+	& p {
+		font-size: 1.5rem;
+		margin-block: 1rem 4rem;
+	}
+
+	& a {
+		font-size: 2rem;
+	}
+}
