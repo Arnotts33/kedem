@@ -24,14 +24,14 @@
 }
 
 .bookingBtn {
-	width: clamp(80px, 10%, 120px);
+	width: clamp(90px, 12%, 120px);
 	aspect-ratio: 1 / 1;
 	background-color: var(--btn-accent);
 	text-align: center;
 	align-content: center;
 	border-radius: 50%;
 	color: var(--text-secondary);
-	font-size: clamp(1rem, 3vw, 1.25rem);
+	font-size: clamp(1rem, 1.5vw, 1.25rem);
 	font-weight: var(--fw-bold);
 	position: fixed;
 	top: 5%;

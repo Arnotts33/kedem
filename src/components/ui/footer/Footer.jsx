@@ -87,6 +87,31 @@ function Footer() {
 					</div>
 				</div>
 			</div>
+			<p>© 2024 Kedem. Tous droits réservés.</p>
+			<div className={styles.credits}>
+				<div className={styles.illustrationsCredit}>
+					<p>Illustrations:</p>
+					<a
+						href="https://www.instagram.com/ublo__/"
+						target="_blank"
+						rel="noreferrer"
+						aria-label="Lien vers page instagram de l'illustratrice"
+					>
+						UBLO | Marine Lecardeur
+					</a>
+				</div>
+				<div className={styles.developerCredit}>
+					<p>Design & Développement:</p>
+					<a
+						href="https://www.linkedin.com/in/arnaudlht/"
+						target="_blank"
+						rel="noreferrer"
+						aria-label="Lien vers le profil LinkedIn du développeur"
+					>
+						AL | Arnaud Lahaut
+					</a>
+				</div>
+			</div>
 		</footer>
 	);
 }

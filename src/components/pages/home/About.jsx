@@ -14,19 +14,19 @@ function About() {
 	useGSAP(() => {
 		const tl = gsap.timeline();
 
+		gsap.set(btnRef.current, { autoAlpha: 0 });
+
 		ScrollTrigger.create({
 			trigger: sectionRef.current,
 			start: "top 70%",
 			end: "bottom top",
-
 			onEnter: () => {
 				tl.to(btnRef.current, {
 					autoAlpha: 1,
 					duration: 0.6,
-					ease: "power4.inOut",
+					ease: "power3.inOut",
 				});
 			},
-
 			onLeaveBack: () => {
 				tl.to(btnRef.current, {
 					autoAlpha: 0,
@@ -35,7 +35,7 @@ function About() {
 				});
 			},
 		});
-	}, [sectionRef.current]);
+	}, []);
 
 	return (
 		<section className={styles.aboutSection} ref={sectionRef}>

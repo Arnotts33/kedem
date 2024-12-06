@@ -31,7 +31,7 @@ function Navbar() {
 	}
 
 	return (
-		<header className={styles.header} ref={headerRef}>
+		<header className={styles.header} ref={headerRef} id="header">
 			<nav className={styles.navbar}>
 				<div className={styles.logo} onClick={closeMobileMenu}>
 					<NavLink to="/">
