@@ -8,7 +8,7 @@ import FormLoader from "../../ui/loaders/FormLoader";
 import fleurSVG from "../../../assets/images/kedem-fleur.svg";
 
 function Traiteur() {
-	const accessKey = "49c64825-8d1a-4fde-9b75-5da2b5872dbc";
+	const accessKey = "7fb7f453-edc2-4925-a865-6602d13d39f1";
 	const { result, isSubmitting, handleSubmit } = useWeb3Form(accessKey);
 
 	const [date, setDate] = useState();
