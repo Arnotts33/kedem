@@ -10,7 +10,7 @@ import Traiteur from "./components/pages/traiteur/Traiteur";
 import Footer from "./components/ui/footer/Footer";
 import "./App.css";
 import NotFound from "./components/pages/errors/NotFound";
-import ZenchefWidget from "./components/ui/zenchef/zenchefWidget";
+import ZenchefWidget from "./components/ui/zenchef/ZenchefWidget";
 
 function App() {
 	useEffect(() => {
