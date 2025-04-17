@@ -21,6 +21,23 @@ function Bookings() {
 		window.scrollTo(0, 0);
 	}, []);
 
+	useEffect(() => {
+		const scriptId = "zenchef-sdk";
+
+		// Si le script n’est pas déjà chargé, on l’ajoute
+		if (!document.getElementById(scriptId)) {
+			const script = document.createElement("script");
+			script.id = scriptId;
+			script.async = true;
+			script.src = "https://sdk.zenchef.com/v1/sdk.min.js";
+
+			const firstScript = document.getElementsByTagName("script")[0];
+			if (firstScript?.parentNode) {
+				firstScript.parentNode.insertBefore(script, firstScript);
+			}
+		}
+	}, []);
+
 	const handleDateChange = (selectedDates) => {
 		const selectedDate = selectedDates[0];
 		setDate(selectedDate);
@@ -33,13 +50,12 @@ function Bookings() {
 			<section className={styles.sectionTitle}>
 				<h1 className={styles.title}>Réservations</h1>
 				<p className={styles.subtitle}>
-					Merci d&apos;utiliser notre formulaire pour effectuer votre
-					demande de réservation. Veuillez noter que cette demande ne
-					garantit pas la disponibilité. Votre réservation sera
-					confirmée uniquement après réception d&apos;un email ou
-					d&apos;un appel téléphonique de notre part. Nous vous
-					remercions de votre compréhension et avons hâte de vous
-					accueillir.
+					Merci d&apos;utiliser notre formulaire pour effectuer votre demande de
+					réservation. Veuillez noter que cette demande ne garantit pas la
+					disponibilité. Votre réservation sera confirmée uniquement après
+					réception d&apos;un email ou d&apos;un appel téléphonique de notre
+					part. Nous vous remercions de votre compréhension et avons hâte de
+					vous accueillir.
 				</p>
 			</section>
 
@@ -83,12 +99,7 @@ function Bookings() {
 						</div>
 						<div className={styles.field}>
 							<label htmlFor="phone">Téléphone</label>
-							<input
-								type="tel"
-								id="phone"
-								name="phone"
-								required
-							/>
+							<input type="tel" id="phone" name="phone" required />
 						</div>
 						<div className={styles.field}>
 							<label htmlFor="date">Date</label>
@@ -143,6 +154,13 @@ function Bookings() {
 						{result && <p className={styles.result}>{result}</p>}
 					</div>
 				</form>
+
+				{/* Zenchef mount point */}
+				<div
+					className="zc-widget-config"
+					data-restaurant="375852"
+					data-open="2000"
+				></div>
 			</section>
 		</div>
 	);
