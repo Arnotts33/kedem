@@ -60,7 +60,7 @@ function Bookings() {
 			</section>
 
 			<section className={styles.formSection}>
-				<form onSubmit={handleSubmit}>
+				{/* <form onSubmit={handleSubmit}>
 					<div className={styles.grid}>
 						<div className={styles.field}>
 							<input
@@ -153,13 +153,14 @@ function Bookings() {
 						{isSubmitting && <FormLoader />}
 						{result && <p className={styles.result}>{result}</p>}
 					</div>
-				</form>
+				</form> */}
 
 				{/* Zenchef mount point */}
 				<div
 					className="zc-widget-config"
 					data-restaurant="375852"
 					data-open="2000"
+					style={{ minHeight: "400px", width: "100%" }}
 				></div>
 			</section>
 		</div>
