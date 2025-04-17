@@ -1,48 +1,57 @@
-import { useEffect, useState } from "react";
-import Flatpickr from "react-flatpickr";
+import { useEffect } from "react";
+// import Flatpickr from "react-flatpickr";
 import "flatpickr/dist/themes/material_orange.css";
 import styles from "./Bookings.module.css";
-import Button from "../../ui/buttons/Button";
-import dateOptions from "../../../lib/flatPickrConfig";
-import useAvailableTimes from "../../../hooks/useAvailableTimes";
-import useWeb3Form from "../../../hooks/useWeb3Form";
-import FormLoader from "../../ui/loaders/FormLoader";
+// import Button from "../../ui/buttons/Button";
+// import dateOptions from "../../../lib/flatPickrConfig";
+// import useAvailableTimes from "../../../hooks/useAvailableTimes";
+// import useWeb3Form from "../../../hooks/useWeb3Form";
+// import FormLoader from "../../ui/loaders/FormLoader";
 import fleurSVG from "../../../assets/images/kedem-fleur.svg";
 
 function Bookings() {
-	const accessKey = "7fb7f453-edc2-4925-a865-6602d13d39f1";
+	// const accessKey = "7fb7f453-edc2-4925-a865-6602d13d39f1";
 
-	const { result, isSubmitting, handleSubmit } = useWeb3Form(accessKey);
-	const { availableTimes, updateAvailableTimes } = useAvailableTimes();
+	// const { result, isSubmitting, handleSubmit } = useWeb3Form(accessKey);
+	// const { availableTimes, updateAvailableTimes } = useAvailableTimes();
 
-	const [date, setDate] = useState();
-
-	useEffect(() => {
-		window.scrollTo(0, 0);
-	}, []);
+	// const [date, setDate] = useState();
 
 	useEffect(() => {
 		const scriptId = "zenchef-sdk";
 
-		// Si le script n’est pas déjà chargé, on l’ajoute
+		// Si le script n'est pas déjà présent
 		if (!document.getElementById(scriptId)) {
 			const script = document.createElement("script");
 			script.id = scriptId;
 			script.async = true;
 			script.src = "https://sdk.zenchef.com/v1/sdk.min.js";
 
-			const firstScript = document.getElementsByTagName("script")[0];
-			if (firstScript?.parentNode) {
-				firstScript.parentNode.insertBefore(script, firstScript);
+			script.onload = () => {
+				// Script chargé, on monte le widget
+				if (window.zc) {
+					window.zc.mount();
+				}
+			};
+
+			document.head.appendChild(script);
+		} else {
+			// Script déjà chargé : on monte le widget directement
+			if (window.zc) {
+				window.zc.mount();
 			}
 		}
 	}, []);
 
-	const handleDateChange = (selectedDates) => {
-		const selectedDate = selectedDates[0];
-		setDate(selectedDate);
-		updateAvailableTimes(selectedDate);
-	};
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
+	// const handleDateChange = (selectedDates) => {
+	// 	const selectedDate = selectedDates[0];
+	// 	setDate(selectedDate);
+	// 	updateAvailableTimes(selectedDate);
+	// };
 
 	return (
 		<div className={styles.container}>
@@ -60,6 +69,12 @@ function Bookings() {
 			</section>
 
 			<section className={styles.formSection}>
+				<div
+					className="zc-widget-config"
+					data-restaurant="375852"
+					data-open="2000"
+					style={{ minHeight: "400px", width: "100%" }}
+				></div>
 				{/* <form onSubmit={handleSubmit}>
 					<div className={styles.grid}>
 						<div className={styles.field}>
@@ -99,7 +114,12 @@ function Bookings() {
 						</div>
 						<div className={styles.field}>
 							<label htmlFor="phone">Téléphone</label>
-							<input type="tel" id="phone" name="phone" required />
+							<input
+								type="tel"
+								id="phone"
+								name="phone"
+								required
+							/>
 						</div>
 						<div className={styles.field}>
 							<label htmlFor="date">Date</label>
@@ -154,14 +174,6 @@ function Bookings() {
 						{result && <p className={styles.result}>{result}</p>}
 					</div>
 				</form> */}
-
-				{/* Zenchef mount point */}
-				<div
-					className="zc-widget-config"
-					data-restaurant="375852"
-					data-open="2000"
-					style={{ minHeight: "400px", width: "100%" }}
-				></div>
 			</section>
 		</div>
 	);
