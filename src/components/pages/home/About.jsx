@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import styles from "./About.module.css";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -39,19 +38,16 @@ function About() {
 
 	return (
 		<section className={styles.aboutSection} ref={sectionRef}>
-			<NavLink to="/bookings" className={styles.bookingsLink}>
-				<div className={styles.bookingBtn} ref={btnRef}>
-					Réserver
-				</div>
-			</NavLink>
-			<h1 className={styles.title}>
-				Goûts et saveurs des pays du Levant
-			</h1>
+			<div className={styles.bookingBtn} ref={btnRef} data-zc-action="open">
+				Réserver
+			</div>
+
+			<h1 className={styles.title}>Goûts et saveurs des pays du Levant</h1>
 			<p className={styles.text}>
-				Kedem, c’est le souhait de partager avec vous un instant de
+				Kedem, c&apos;est le souhait de partager avec vous un instant de
 				convivialité et de découverte, une cuisine de saison aux saveurs
-				délicates et épicées, accompagnée d’une sélection attentive de
-				vins et boissons d’ici et d’ailleurs.
+				délicates et épicées, accompagnée d&apos;une sélection attentive de vins
+				et boissons d&apos;ici et d&apos;ailleurs.
 			</p>
 		</section>
 	);

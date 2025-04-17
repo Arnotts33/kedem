@@ -41,18 +41,25 @@ function Navbar() {
 
 				<ul
 					className={
-						isMobileMenuOpen
-							? styles.navMobileMenuList
-							: styles.navMenuList
+						isMobileMenuOpen ? styles.navMobileMenuList : styles.navMenuList
 					}
 				>
 					<li>
-						<HashLink smooth to="/#menus" onClick={closeMobileMenu}>
+						<HashLink
+							smooth
+							to="/#menus"
+							onClick={closeMobileMenu}
+							className={styles.navLink}
+						>
 							Menus
 						</HashLink>
 					</li>
 					<li>
-						<NavLink to="/traiteur" onClick={closeMobileMenu}>
+						<NavLink
+							to="/traiteur"
+							onClick={closeMobileMenu}
+							className={styles.navLink}
+						>
 							Traiteur
 						</NavLink>
 					</li>
@@ -67,15 +74,20 @@ function Navbar() {
 									duration: 800,
 								});
 							}}
+							className={styles.navLink}
 						>
 							Contact
 						</a>
 					</li>
-					<li className={styles.bookingsLink}>
-						<NavLink to="/bookings" onClick={closeMobileMenu}>
-							Réservations
-						</NavLink>
-					</li>
+
+					<button
+						className={styles.bookingsLink}
+						onClick={closeMobileMenu}
+						aria-label="Réservations"
+						data-zc-action="open"
+					>
+						Réservations
+					</button>
 				</ul>
 				<div
 					className={styles.mobileMenu}

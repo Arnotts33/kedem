@@ -22,10 +22,11 @@
 
 .navMenuList {
 	display: flex;
+	align-items: center;
 	gap: 3rem;
 }
 
-.navMenuList li a {
+.navMenuList .navLink {
 	position: relative;
 	font-family: var(--ff-satoshi);
 	color: var(--heading-primary);
@@ -34,7 +35,7 @@
 	padding-block: 0.75rem;
 }
 
-.navMenuList a::before:not(.bookingsLink) {
+.navMenuList .navLink::before {
 	content: "";
 	position: absolute;
 	display: block;
@@ -48,11 +49,11 @@
 	transition: transform 0.3s ease;
 }
 
-.navMenuList a:hover::before:not(.bookingsLink) {
+.navMenuList .navLink:hover::before {
 	transform: scaleX(1);
 }
 
-.navMenuList li.bookingsLink a {
+.navMenuList .bookingsLink {
 	background-color: var(--btn-accent);
 	padding: 1rem 2rem;
 	border-radius: 2rem;
@@ -78,16 +79,6 @@
 	animation: fadeIn 0.3s ease-in-out;
 }
 
-.navMobileMenuList li {
-	width: 100%;
-}
-
-.navMobileMenuList li a {
-	display: block;
-	width: 100%;
-	font-weight: var(--fw-medium);
-}
-
 @keyframes fadeIn {
 	from {
 		opacity: 0;
@@ -99,7 +90,14 @@
 	}
 }
 
-.navMobileMenuList li {
+.navMobileMenuList li a {
+	display: block;
+	width: 100%;
+	font-weight: var(--fw-medium);
+}
+
+.navMobileMenuList li,
+.navMobileMenuList .bookingsLink {
 	width: 100%;
 	text-align: center;
 	padding: 1rem;
@@ -111,11 +109,8 @@
 	transition: all 0.2s ease-out;
 }
 
-.navMobileMenuList li.bookingsLink {
+.navMobileMenuList .bookingsLink {
 	background-color: var(--btn-accent);
-}
-
-.navMobileMenuList li.bookingsLink a {
 	color: var(--btn-text);
 	font-weight: var(--fw-bold);
 }

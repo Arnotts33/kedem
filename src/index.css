@@ -80,7 +80,6 @@ html {
 
 body {
 	background-color: var(--bg-primary);
-	/* background-color: hsl(46, 55%, 88%); */
 	font-family: var(--ff-satoshi);
 	font-weight: var(-fw-regular);
 }
