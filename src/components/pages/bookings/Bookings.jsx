@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Flatpickr from "react-flatpickr";
 import "flatpickr/dist/themes/material_orange.css";
 import styles from "./Bookings.module.css";
@@ -16,32 +16,9 @@ function Bookings() {
 	const { availableTimes, updateAvailableTimes } = useAvailableTimes();
 
 	const [date, setDate] = useState();
-	const zenchefRef = useRef(null);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
-
-		const scriptId = "zenchef-sdk";
-		function initZenchefWidget() {
-			if (window.ZCWidget) {
-				window.ZCWidget.init();
-			}
-		}
-
-		if (!document.getElementById(scriptId)) {
-			const script = document.createElement("script");
-			script.id = scriptId;
-			script.async = true;
-			script.src = "https://sdk.zenchef.com/v1/sdk.min.js";
-			script.onload = () => {
-				console.log("Zenchef SDK loaded");
-				initZenchefWidget();
-			};
-			document.body.appendChild(script);
-		} else {
-			console.log("Zenchef SDK already present");
-			initZenchefWidget();
-		}
 	}, []);
 
 	const handleDateChange = (selectedDates) => {
@@ -64,15 +41,6 @@ function Bookings() {
 					vous accueillir.
 				</p>
 			</section>
-
-			{/* Zenchef Widget */}
-			<div
-				ref={zenchefRef}
-				className="zc-widget-config"
-				data-restaurant="375852"
-				data-open="2000"
-				style={{ width: "800px", height: "400px", marginBottom: "2rem" }}
-			></div>
 
 			<section className={styles.formSection}>
 				<form onSubmit={handleSubmit}>
