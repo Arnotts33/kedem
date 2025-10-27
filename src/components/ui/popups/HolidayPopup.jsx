@@ -38,7 +38,7 @@ export default function HolidayPopup() {
 						<li>27 décembre : ouvert midi et soir</li>
 						<li>28 décembre : fermé</li>
 						<li>29 décembre : ouvert le midi</li>
-						<li>30 décembre & 31 décembre : ouvert midi et soir</li>
+						<li>30/31 décembre : ouvert midi et soir</li>
 					</ul>
 					<h3>Le restaurant sera ensuite fermé du 1er au 11 janvier inclus.</h3>
 				</div>
