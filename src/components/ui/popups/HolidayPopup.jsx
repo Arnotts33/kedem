@@ -1,20 +1,9 @@
 import styles from "./HolidayPopup.module.css";
-import { useState, useEffect } from "react";
 import closePopupIcon from "../../../assets/icons/xmark-solid.svg";
 
-export default function HolidayPopup() {
-	const [isVisible, setIsVisible] = useState(false);
-
-	useEffect(() => {
-		const timer = setTimeout(() => {
-			setIsVisible(true);
-		}, 2000);
-
-		return () => clearTimeout(timer);
-	}, []);
-
+export default function HolidayPopup({ isVisible, onClose }) {
 	const handleClose = () => {
-		setIsVisible(false);
+		onClose();
 	};
 
 	if (!isVisible) return null;

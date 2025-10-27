@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import Lenis from "lenis";
 
@@ -12,6 +12,8 @@ import ZenchefWidget from "./components/ui/zenchef/ZenchefWidget";
 import HolidayPopup from "./components/ui/popups/HolidayPopup";
 
 function App() {
+	const [showPopup, setShowPopup] = useState(true);
+
 	useEffect(() => {
 		const lenis = new Lenis();
 
@@ -21,11 +23,17 @@ function App() {
 		}
 
 		requestAnimationFrame(raf);
+
+		return () => lenis.destroy();
 	}, []);
+
+	const handleClosePopup = () => {
+		setShowPopup(false);
+	};
 
 	return (
 		<>
-			<HolidayPopup />
+			<HolidayPopup isVisible={showPopup} onClose={handleClosePopup} />
 			<Navbar />
 			<Routes>
 				<Route path="/" element={<Home />} />
@@ -35,7 +43,7 @@ function App() {
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />
-			<ZenchefWidget />
+			{showPopup ? null : <ZenchefWidget />}
 		</>
 	);
 }
