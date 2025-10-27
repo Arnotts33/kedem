@@ -4,13 +4,12 @@ import Lenis from "lenis";
 
 import Navbar from "./components/ui/navbar/Navbar";
 import Home from "./components/pages/home/Home";
-// import Bookings from "./components/pages/bookings/Bookings";
 import Traiteur from "./components/pages/traiteur/Traiteur";
-// import Contact from "./components/pages/contact/Contact";
 import Footer from "./components/ui/footer/Footer";
 import "./App.css";
 import NotFound from "./components/pages/errors/NotFound";
 import ZenchefWidget from "./components/ui/zenchef/ZenchefWidget";
+import HolidayPopup from "./components/ui/popups/HolidayPopup";
 
 function App() {
 	useEffect(() => {
@@ -26,6 +25,7 @@ function App() {
 
 	return (
 		<>
+			<HolidayPopup />
 			<Navbar />
 			<Routes>
 				<Route path="/" element={<Home />} />
