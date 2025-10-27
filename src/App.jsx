@@ -27,6 +27,19 @@ function App() {
 		return () => lenis.destroy();
 	}, []);
 
+	// Bloque le scroll quand la popup est ouverte
+	useEffect(() => {
+		if (showPopup) {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = "";
+		}
+
+		return () => {
+			document.body.style.overflow = "";
+		};
+	}, [showPopup]);
+
 	const handleClosePopup = () => {
 		setShowPopup(false);
 	};
