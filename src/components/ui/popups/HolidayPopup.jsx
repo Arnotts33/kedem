@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styles from "./HolidayPopup.module.css";
 import closePopupIcon from "../../../assets/icons/xmark-solid.svg";
 

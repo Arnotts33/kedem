@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import Lenis from "lenis";
 
@@ -9,10 +9,10 @@ import Footer from "./components/ui/footer/Footer";
 import "./App.css";
 import NotFound from "./components/pages/errors/NotFound";
 import ZenchefWidget from "./components/ui/zenchef/ZenchefWidget";
-import HolidayPopup from "./components/ui/popups/HolidayPopup";
+// import HolidayPopup from "./components/ui/popups/HolidayPopup";
 
 function App() {
-	const [showPopup, setShowPopup] = useState(true);
+	// const [showPopup, setShowPopup] = useState(true);
 
 	useEffect(() => {
 		const lenis = new Lenis();
@@ -28,25 +28,25 @@ function App() {
 	}, []);
 
 	// Bloque le scroll quand la popup est ouverte
-	useEffect(() => {
-		if (showPopup) {
-			document.body.style.overflow = "hidden";
-		} else {
-			document.body.style.overflow = "";
-		}
+	// useEffect(() => {
+	// 	if (showPopup) {
+	// 		document.body.style.overflow = "hidden";
+	// 	} else {
+	// 		document.body.style.overflow = "";
+	// 	}
 
-		return () => {
-			document.body.style.overflow = "";
-		};
-	}, [showPopup]);
+	// 	return () => {
+	// 		document.body.style.overflow = "";
+	// 	};
+	// }, [showPopup]);
 
-	const handleClosePopup = () => {
-		setShowPopup(false);
-	};
+	// const handleClosePopup = () => {
+	// 	setShowPopup(false);
+	// };
 
 	return (
 		<>
-			<HolidayPopup isVisible={showPopup} onClose={handleClosePopup} />
+			{/* <HolidayPopup isVisible={showPopup} onClose={handleClosePopup} /> */}
 			<Navbar />
 			<Routes>
 				<Route path="/" element={<Home />} />
@@ -56,7 +56,8 @@ function App() {
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 			<Footer />
-			{showPopup ? null : <ZenchefWidget />}
+			<ZenchefWidget />
+			{/* {showPopup ? null : <ZenchefWidget />} */}
 		</>
 	);
 }
